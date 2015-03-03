@@ -1,0 +1,61 @@
+// Colors
+// $white: #F0E9E5;
+$white: #f2f2f2;
+
+$black: #4D515F;
+
+$primary-color: #4D515F;
+$secondary-color: #FF4863;
+$tertiary-color: #91DEED;
+
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+
+$font-family-ios: 'Helvetica Neue', Helvetica, sans-serif;
+$font-family-android: 'RobotoRegular', 'Droid Sans', sans-serif;
+
+// Typography
+$base-font-family: $font-family-ios;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1.25em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 0;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Font Colors
+$base-background-color: lighten($white, 10%);
+$base-font-color: $black;
+$action-color: $primary-color;
+
+// Border
+$base-border-color: darken($white, 20%);
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+
+/**
+ * Header
+ */
+$header-height: 44px;
+
+/**
+ * Padding
+ */
+$base-padding: 16px;
+
+/**
+ * Neat
+ */
+$gutter: 15px;

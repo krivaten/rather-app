@@ -1,0 +1,92 @@
+/**
+ * Tasks
+ */
+.task {
+	@include transition(all 0.2s ease-in-out);
+
+	position: relative;
+	border-bottom: $base-border;
+	padding: 10px;
+
+	&.checked {
+		background: darken($white, 10%);
+	}
+	&:last-child {
+		border-bottom: 0;
+	}
+
+	.task-complete {
+		+ .task-text {
+			margin-left: 50px;
+		}
+	}
+
+	&.owner {
+		.task-text {
+			margin-right: 50px;
+		}
+	}
+
+	.btn {
+		@include transition(all 0.2s ease-in-out);
+		cursor: pointer;
+		padding: 10px;
+
+		&.task-complete {
+			@include transform(translateY(-50%));
+			position: absolute;
+			top: 50%;
+			color: $primary-color;
+
+			&:hover,
+			&:active {
+				color: darken($primary-color, 10%);
+			}
+		}
+	}
+
+	.task-meta {
+		font-size: 0.75em;
+		font-style: italic;
+		color: darken($white, 40%);
+	}
+
+	.task-controls {
+		.btn {
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			padding: 0 10px;
+			width: 20px;
+			height: 50%;
+			line-height: 50%;
+			color: $white;
+
+			&:first-child {
+				top: 0;
+				background: $primary-color;
+
+				&:hover,
+				&:active {
+					background: darken($primary-color, 10%);
+				}
+			}
+			&:last-child {
+				bottom: 0;
+				background: $secondary-color;
+
+				&:hover,
+				&:active {
+					background: darken($secondary-color, 10%);
+				}
+			}
+
+			i {
+				@include transform(translate(-50%, -50%));
+				position: absolute;
+				top: 50%;
+				left: 50%;
+			}
+		}
+	}
+}

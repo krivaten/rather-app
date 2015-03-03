@@ -1,0 +1,11 @@
+/**
+ * Alerts
+ */
+
+.alert {
+	background: lighten($tertiary-color, 20%);
+	color: $white;
+	text-align: center;
+	text-transform: lowercase;
+	padding: 5px 15px;
+}

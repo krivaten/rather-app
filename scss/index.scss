@@ -1,0 +1,41 @@
+/**
+ * Add Bower dependencies
+ */
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import '../private/.bower/ionicons/scss/ionicons';
+
+/**
+ * Import variables
+ */
+@import 'variables';
+@import 'mixins';
+
+/**
+ * Import base styles
+ */
+@import 'base/base';
+
+
+/**
+ * Framework
+ */
+@import 'framework/base';
+@import 'framework/header';
+@import 'framework/colors';
+@import 'framework/container';
+@import 'framework/tasks';
+@import 'framework/alerts';
+
+/**
+ * Utilities
+ */
+@import 'utils/ratio';
+@import 'utils/typography';
+@import 'utils/spacing';
+
+/**
+ * Partials
+ */
+@import 'templates/routes/index';
+@import 'templates/routes/account/index';

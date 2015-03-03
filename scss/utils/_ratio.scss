@@ -1,0 +1,62 @@
+/**
+ * Aspect Ratio Styles
+ */
+.ratio {
+	position: relative;
+	width: 100%;
+
+	// 1:1 ratio (default)
+	&:before {
+		content: "";
+		display: block;
+		padding-top: 100%;
+	}
+
+	// 2:1 ration
+	&.ratio-2-1:before{
+		padding-top: 50%;
+	}
+
+	// 1:2 ration
+	&.ratio-1-2:before{
+		padding-top: 200%;
+	}
+
+	// 4:3 ration
+	&.ratio-4-3:before{
+		padding-top: 75%;
+	}
+
+	// 16:9 ration
+	&.ratio-16-9:before{
+		padding-top: 56.25%;
+	}
+
+	.ratio-content{
+		position:  absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+
+	.thumbnail, .content {
+		@include transform(translate3d(0, -50%, 0));
+		width: 100%;
+		position: absolute;
+		top: 50%;
+	}
+
+	// thumbnail overlay
+	.thumbnail {
+		z-index: 0;
+	}
+
+	// text content that is vertically aligned
+	.content {
+		color: red;
+		padding: 0 15px;
+		z-index: 10;
+	}
+}

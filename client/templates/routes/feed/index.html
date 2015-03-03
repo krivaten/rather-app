@@ -1,0 +1,16 @@
+<template name="feedIndex">
+	<div class="page feed">
+		<h1>Feed Index</h1>
+
+		{{> partialFormNewTask}}
+		<ul>
+			{{#each tasks}}
+				{{> partialTask}}
+			{{else}}
+				<li class="task">
+					<div class="task-text">No tasks to display</div>
+				</li>
+			{{/each}}
+		</ul>
+	</div>
+</template>

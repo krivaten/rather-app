@@ -1,0 +1,18 @@
+<template name="layoutHeader">
+	<header>
+		{{#if currentUser}}
+			<div class="header-user">
+				<a href="{{pathFor 'account'}}" class="btn">
+					<i class="ion ion-person"></i>
+				</a>
+			</div>
+
+			<div class="header-filter">
+				<button class="btn hide-completed {{#if hideCompleted}}active{{/if}}">
+					{{incompleteCount}}
+					<i class="ion ion-funnel"></i>
+				</button>
+			</div>
+		{{/if}}
+	</header>
+</template>
