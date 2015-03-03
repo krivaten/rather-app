@@ -19,7 +19,7 @@ An example of this would be:
 - `.block__element` represents a descendent of `.block` that helps form `.block` as a whole.
 - `.block--modifier` represents a different state or version of `.block`.
 
-Another example would be
+Another example would be:
 
 ````
 .site-search {}
@@ -52,5 +52,5 @@ At the top of files and as the header of major sections (Which should really be 
 Above minor sections within a file
 
 ````
-// Input Styles
+// Text input
 ````
