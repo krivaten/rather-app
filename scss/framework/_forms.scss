@@ -1,0 +1,24 @@
+/**
+ * Form elements
+ */
+.input-container {
+	border-top: $base-border;
+	padding-left: $base-padding;
+	padding-right: $base-padding;
+	text-transform: lowercase;
+
+	&:first-of-type {
+		border-top: 0;
+	}
+
+	.content-padded & {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	input {
+		@include placeholder() {
+			text-transform: lowercase;
+		}
+	}
+}

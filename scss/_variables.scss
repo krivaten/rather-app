@@ -1,12 +1,12 @@
 // Colors
 // $white: #F0E9E5;
-$white: #f2f2f2;
+$white: #F9F9F9;
 
-$black: #4D515F;
+$black: #46433A;
 
-$primary-color: #4D515F;
-$secondary-color: #FF4863;
-$tertiary-color: #91DEED;
+$primary-color: #5B8C7F; // Green
+$secondary-color: #AF4C4A; // Red
+$tertiary-color: #46433A; // Brown
 
 $facebook-color: #3b5998;
 $twitter-color: #55acee;
@@ -19,7 +19,7 @@ $base-font-family: $font-family-ios;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1.25em;
+$base-font-size: 1em;
 
 // Line height
 $base-line-height: 1.5;
@@ -32,9 +32,9 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Font Colors
-$base-background-color: lighten($white, 10%);
+$base-background-color: $white;
 $base-font-color: $black;
-$action-color: $primary-color;
+$action-color: $secondary-color;
 
 // Border
 $base-border-color: darken($white, 20%);
@@ -43,7 +43,7 @@ $base-border: 1px solid $base-border-color;
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-
+$base-input-height: 40px;
 
 /**
  * Header
