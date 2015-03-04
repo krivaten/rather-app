@@ -17,3 +17,5 @@ npm-container
 wolves:neat
 wolves:bourbon
 iron:router
+mdg:camera
+mdg:geolocation
