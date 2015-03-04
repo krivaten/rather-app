@@ -1,8 +1,7 @@
 App.info({
   name: 'Rather',
   description: 'Decisions made social',
-  author: '
-  ',
+  author: 'XA',
   email: 'krivaten@gmail.com',
   website: 'http://krivaten.com',
   version: '0.1.0'
@@ -26,7 +25,7 @@ App.launchScreens({
   // iOS
   'iphone': 'public/img/splash/ios-320x480.jpg',
   'iphone_2x': 'public/img/splash/ios-640x960.jpg',
-  'iphone5': 'public/img/splash/ios-640x1136.png',
+  'iphone5': 'public/img/splash/ios-640x1136.jpg',
   'ipad_portrait': 'public/img/splash/ios-768x1024.jpg',
   'ipad_portrait_2x': 'public/img/splash/ios-1536x2048.jpg',
   'ipad_landscape': 'public/img/splash/ios-1024x768.jpg',
