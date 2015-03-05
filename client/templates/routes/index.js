@@ -41,6 +41,17 @@ Template.index.events({
 				Router.go('feed');
 			}
 		})
-	}
+	},
 
+
+	'click .test-camera': function () {
+		var cameraOptions = {
+			width: 800,
+			height: 600
+		};
+
+		MeteorCamera.getPicture(cameraOptions, function (error, data) {
+			Session.set("photo", data);
+		});
+	}
 });
