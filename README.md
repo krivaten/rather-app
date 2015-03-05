@@ -10,10 +10,11 @@ Install the newest version of Meteor with one command on OS X or Linux. Open you
 ### Install Android dependencies
 - `meteor install-sdk android`
 - `meteor add-platform android`
-- `meteor run android-device --mobile-server democio.meteor.com`
 
-### Deploy to Meteor
-`meteor deploy rather.meteor.com`
+### Testing Deployment
+You can test the app by deploying it to Meteor's testing servers by running the command `meteor deploy rather.meteor.com`.
+
+You can do a test build on an Android phone using Meteor's testing servers by running the command `meteor run android-device --mobile-server democio.meteor.com`.
 
 ### Depdendencies
 - `meteor-platform`
@@ -24,7 +25,7 @@ Install the newest version of Meteor with one command on OS X or Linux. Open you
 
 ### Standards
 
-- User camelCase for all paths. For example `layoutHeader`, or `partialFormSignUp`, etc.
+- Use camelCase for all paths. For example `layoutHeader`, or `partialFormSignUp`, etc.
 - Make good comments! Doing so may mean that there is more comments than actual code, but it's worth it. For example:
 
 ```
@@ -36,5 +37,7 @@ Install the newest version of Meteor with one command on OS X or Linux. Open you
  * @return {String} Specialized something
  * @since v0.0.1
  */
-function somethingSpecial(specialThing) {}
+function somethingSpecial(specialThing) {
+	return "I am special";
+}
 ```
