@@ -19,8 +19,8 @@ Meteor.startup(function() {
 	});
 	Accounts.loginServiceConfiguration.insert({
 		service: 'facebook',
-		appId: 'whsAlCJUIKT6niIeTzDoPv3Gr',
-		secret: 'XrnQ6spiZKiw8knbEfExMCKESVRzDiEPDqGVz15LWZ8VHxdp14',
+		appId: '1558392507753480',
+		secret: 'b5b26d0904667b7c98568f9af857656a',
 		loginStyle: 'popup'
 	});
 });
