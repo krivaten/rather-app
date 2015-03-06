@@ -13,14 +13,14 @@ Template.index.events({
 			requestPermissions: ['public_profile', 'email']
 		}, function(err) {
 			if (err) {
-				console.log(err)
+				console.log(err);
 				// Error handlinlg
 			} else {
 
 				// Redirect to Feed
 				Router.go('feed');
 			}
-		})
+		});
 	},
 
 	/**
@@ -33,7 +33,7 @@ Template.index.events({
 			requestPermissions: ['user']
 		}, function(err) {
 			if (err) {
-				console.log(err)
+				console.log(err);
 				// Error handlinlg
 			} else {
 

@@ -21,11 +21,11 @@ Template.feedIndex.helpers({
 		if (Session.get("hideCompleted")) {
 
 			// Filter tasks
-			return Tasks.find({checked: {$ne: true}}, options});
+			return Tasks.find({checked: {$ne: true}}, options);
 		} else {
 
 			// Return all of the tasks
-			return Tasks.find({}, options});
+			return Tasks.find({}, options);
 		}
 	}
 
