@@ -11,7 +11,7 @@ Template.feedIndex.helpers({
 	 * @since v0.1.0
 	 */
 	tasks: function () {
-		var options: {
+		var options = {
 			sort: {
 				createdAt: -1
 			}
