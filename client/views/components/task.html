@@ -1,8 +1,5 @@
-<template name="partialTask">
-	<!-- add right below the code for the checkbox in the task template -->
-
-	<!-- modify the li tag to have the private class if the item is private -->
-	<li class="task {{#if checked}}checked{{/if}} {{#if private}}private{{/if}} {{#if isOwner}}owner{{/if}}">
+<template name="componentTask">
+	<li class="component task {{#if checked}}checked{{/if}} {{#if private}}private{{/if}} {{#if isOwner}}owner{{/if}}">
 		<span class="btn task-complete {{#if checked}}active{{/if}}">
 			<i class="ion {{#if checked}}ion-android-checkbox{{else}}ion-android-checkbox-blank{{/if}}"></i>
 		</span>

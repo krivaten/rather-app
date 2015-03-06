@@ -1,7 +1,7 @@
 /**
  * New Task Events
  */
-Template.partialFormNewTask.events({
+Template.componentFormNewTask.events({
 
 	/**
 	 * Submit new task

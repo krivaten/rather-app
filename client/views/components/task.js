@@ -1,11 +1,11 @@
 // In the client code, below everything else
-Template.partialTask.helpers({
+Template.componentTask.helpers({
 	isOwner: function () {
 		return this.owner === Meteor.userId();
 	}
 });
 
-Template.partialTask.events({
+Template.componentTask.events({
 
 	/**
 	 * Mark task as complete
