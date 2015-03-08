@@ -1,31 +1,61 @@
 <template name="index">
 	<div class="page index">
-		<div class="align-y">
-			<div class="content-padded">
 
-				<div class="sign-in-buttons">
-					<a href="#" class="sign-in sign-in-facebook ratio">
-						<i class="ion ion-social-facebook"></i>
-					</a>
-
-					<a href="#" class="sign-in sign-in-twitter ratio">
-						<i class="ion ion-social-twitter"></i>
-					</a>
-				</div>
-
-				<form class="form-sign-in">
-					<div class="input-container">
-						<input type="text" placeholder="Username" />
-					</div>
-					<div class="input-container">
-						<input type="password" placeholder="Password" />
-						<a href="#" class="input-something">Forgot?</a>
-					</div>
-				</form>
-				<p class="text-center">How would you like to sign in?</p>
-
-				<button type="button" class="test-camera">CAMERA</button>
+		<div class="ratio ratio---16-9">
+			<div class="ratio___content padding---x">
+				{{> svgLogo}}
 			</div>
 		</div>
+
+		<div class="padding---x">
+
+			<div class="row">
+				<a href="#" class="sign-in sign-in---facebook">
+					<i class="ion ion-social-facebook"></i>
+				</a>
+
+				<a href="#" class="sign-in sign-in---twitter">
+					<i class="ion ion-social-twitter"></i>
+				</a>
+			</div>
+
+			<div class="divider divider---bottom">or</div>
+
+			<form class="form---sign-in">
+				<div class="input">
+					<input type="text" placeholder="Username" />
+				</div>
+				<div class="input input---collapsible {{#unless creatingAccount}}input---collapsed{{/unless}}">
+					<input type="text" placeholder="Email" />
+				</div>
+				<div class="input input---group">
+					<a href="#" class="input-something">Forgot?</a>
+					<input type="password" placeholder="Password" data-padding-right="55px" />
+				</div>
+			</form>
+
+		</div>
+		
+		<footer class="footer footer---text">
+			<div class="padding---x">
+				<div class="row">
+					<div class="footer-col">
+						<a href="#" class="create-account-toggle text-secondary">
+							{{#if creatingAccount}}
+								Nevermind, Sign In
+							{{else}}
+								Create an account
+							{{/if}}
+						</a>
+					</div>
+					<div class="footer-col">
+						<a href="{{pathFor 'info/terms-of-service'}}" class="terms-service text-tertiary">
+							Terms of service
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
 	</div>
 </template>

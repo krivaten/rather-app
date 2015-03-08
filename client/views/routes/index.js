@@ -1,4 +1,20 @@
 /**
+ * Index helpers
+ */
+Template.index.helpers({
+
+	/**
+	 * Determine whether or not creatingAccount is true
+	 * @return {Boolean} Whether or not user is creatingAccount
+	 * @since v0.1.0
+	 */
+	creatingAccount: function() {
+		return Session.get('creatingAccount');
+	}
+
+});
+
+/**
  * Index Events
  */
 Template.index.events({
@@ -23,6 +39,7 @@ Template.index.events({
 		});
 	},
 
+
 	/**
 	 * Twitter sign in event
 	 *
@@ -44,6 +61,15 @@ Template.index.events({
 	},
 
 
+	/**
+	 * Creating account toggle
+	 * 
+	 * @since v0.1.0
+	 */
+	'click .create-account-toggle': function() {
+		Session.set('creatingAccount', !Session.get('creatingAccount'));
+	},
+
 	'click .test-camera': function () {
 		var cameraOptions = {
 			width: 800,
@@ -54,4 +80,5 @@ Template.index.events({
 			Session.set("photo", data);
 		});
 	}
+
 });
