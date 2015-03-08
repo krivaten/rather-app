@@ -1,6 +1,7 @@
 // Colors
 // $white: #F0E9E5;
 $white: #F9F9F9;
+$gray: darken($white, 20%);
 
 $black: #46433A;
 
@@ -40,7 +41,7 @@ $base-font-color: $black;
 $action-color: $secondary-color;
 
 // Border
-$base-border-color: darken($white, 20%);
+$base-border-color: $gray;
 $base-border: 1px solid $base-border-color;
 
 // Forms
