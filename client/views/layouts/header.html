@@ -1,5 +1,6 @@
 <template name="layoutHeader">
 	<header class="header">
+		{{> svgLogoSm}}
 		{{#if currentUser}}
 			<div class="header-user">
 				<a href="{{pathFor 'account'}}" class="btn">
