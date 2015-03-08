@@ -1,4 +1,8 @@
+# Hide Meteor stuffs
 .meteor/local
 .meteor/meteorite
 
+# Hide bower components
 private/.bower
+
+.DS_Store

@@ -25,6 +25,12 @@ Router.route('index', function () {
 	this.render('index');
 });
 
+Router.route('info/terms-of-service', function () {
+
+	// Render the index page
+	this.render('infoTermsOfService');
+});
+
 
 /**
  * Account Routes
