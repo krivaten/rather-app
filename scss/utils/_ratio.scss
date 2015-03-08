@@ -13,26 +13,37 @@
 	}
 
 	// 2:1 ration
-	&.ratio---2-1:before{
+	&.ratio---2-1:before {
 		padding-top: 50%;
 	}
 
 	// 1:2 ration
-	&.ratio---1-2:before{
+	&.ratio---1-2:before {
 		padding-top: 200%;
 	}
 
 	// 4:3 ration
-	&.ratio---4-3:before{
+	&.ratio---4-3:before {
 		padding-top: 75%;
 	}
 
 	// 16:9 ration
-	&.ratio---16-9:before{
-		padding-top: 56.25%;
+	&.ratio---16-9 {
+		&:before {
+			padding-top: 56.25%;
+		}
+		&.ratio---bg {
+			background-image: url(/img/ratio-16-9.jpg);
+		}
+	}
+	
+	&.ratio---bg {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
-	.ratio-content{
+	.ratio-content {
 		position:  absolute;
 		top: 0;
 		left: 0;
@@ -47,7 +58,7 @@
 		position: absolute;
 		top: 50%;
 	}
-
+	
 	// thumbnail overlay
 	.thumbnail {
 		z-index: 0;
