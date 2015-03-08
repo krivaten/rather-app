@@ -1,5 +1,7 @@
 .container {
-	padding-top: $header-height;
+	.header + & {
+		padding-top: $header-height;
+	}
 }
 
 .padding {
