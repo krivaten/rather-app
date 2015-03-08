@@ -1,0 +1,26 @@
+/**
+ * Footer styles
+ */
+.footer {
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	width: 100%;
+	text-transform: lowercase;
+
+	&.footer---text {
+		height: $base-height;
+		line-height: $base-height;
+	}
+
+	.footer-col {
+		@include span-columns(6);
+
+		&:first-of-type {
+			text-align: left;
+		}
+		&:last-of-type {
+			text-align: right;
+		}
+	}
+}

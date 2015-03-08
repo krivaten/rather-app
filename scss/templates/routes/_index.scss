@@ -3,33 +3,18 @@
  */
 .page.index {
 
-	.sign-in-buttons {
-		@include row();
+	.sign-in {
+		@include span-columns(6);
+		color: $white;
+		font-size: 2.5em;
+		text-align: center;
 
-		p {
-			text-align: center;
-			text-transform: lowercase;
+		&.sign-in---facebook {
+			background: $facebook-color;
 		}
-		.sign-in {
-			@include span-columns(4);
-			background: $primary-color;
-			color: $white;
-			font-size: 2em;
-			text-align: center;
 
-			i {
-				@include transform(translate(-50%, -50%));
-				position: absolute;
-				top: 50%;
-				left: 50%;
-			}
-			&.sign-in-facebook {
-				background: $facebook-color;
-			}
-
-			&.sign-in-twitter {
-				background: $twitter-color;
-			}
+		&.sign-in---twitter {
+			background: $twitter-color;
 		}
 	}
 }

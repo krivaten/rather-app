@@ -1,5 +1,5 @@
 /**
- * Fills
+ * Svg fills
  */
 .fill-primary {
 	fill: $primary-color;
@@ -9,4 +9,20 @@
 }
 .fill-tertiary {
 	fill: $tertiary-color;
+}
+
+
+/**
+ * Text colors
+ */
+.text-primary {
+	color: $primary-color;
+}
+
+.text-secondary {
+	color: $secondary-color;
+}
+
+.text-tertiary {
+	color: $tertiary-color;
 }

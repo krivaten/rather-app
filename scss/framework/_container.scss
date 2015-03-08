@@ -2,7 +2,12 @@
 	padding-top: $header-height;
 }
 
-.content-padded {
+.padding {
 	position: relative;
 	padding: $base-padding;
+}
+
+.padding---x {
+	padding-left: $base-padding;
+	padding-right: $base-padding;
 }

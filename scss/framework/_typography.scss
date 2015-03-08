@@ -1,0 +1,26 @@
+/**
+ * Typography styles
+ */
+.divider {
+	position: relative;
+	text-align: center;
+	z-index: 5;
+
+	&:before, &:after {
+		border-top: $base-border;
+		content: '';
+		position: absolute;
+		top: 50%;
+		width: 45%
+	}
+	&:before {
+		left: 0;
+	}
+	&:after {
+		right: 0;
+	}
+	
+	&.divider---bottom {
+		margin-bottom: -12px;
+	}
+}

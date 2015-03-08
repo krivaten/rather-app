@@ -18,6 +18,9 @@ $font-family-android: 'RobotoRegular', 'Droid Sans', sans-serif;
 $base-font-family: $font-family-ios;
 $heading-font-family: $base-font-family;
 
+// Dimensions
+$base-height: 40px;
+
 // Font Sizes
 $base-font-size: 1em;
 
@@ -43,7 +46,9 @@ $base-border: 1px solid $base-border-color;
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
-$base-input-height: 40px;
+$base-input-height: $base-height;
+
+$input-group-padding: 55px;
 
 /**
  * Header

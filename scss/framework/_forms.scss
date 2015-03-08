@@ -1,7 +1,8 @@
 /**
  * Form elements
  */
-.input-container {
+.input {
+	position: relative;
 	border-top: $base-border;
 	padding-left: $base-padding;
 	padding-right: $base-padding;
@@ -11,7 +12,7 @@
 		border-top: 0;
 	}
 
-	.content-padded & {
+	[class*="padding"] & {
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -20,5 +21,31 @@
 		@include placeholder() {
 			text-transform: lowercase;
 		}
+	}
+
+	a {
+		height: $base-input-height;
+		line-height: $base-input-height;
+	}
+
+	&.input---group {
+		input {
+			padding-right: $input-group-padding;
+		}
+		a {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	&.input---collapsible {
+		@include transition(height 0.2s ease-in-out, opacity 0.2s ease-in-out);
+		height: $base-input-height;
+		overflow: hidden;
+	}
+	&.input---collapsed {
+		height: 0;
+		opacity: 0;
 	}
 }
