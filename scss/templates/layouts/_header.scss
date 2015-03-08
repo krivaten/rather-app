@@ -1,0 +1,14 @@
+/**
+ * Header styles
+ */
+.header {
+	
+	.svg {
+		&.logo-sm {
+			position: relative;
+			height: $header-height - ($base-padding * 2);
+			top: $base-padding;
+			left: $base-padding;
+		}
+	}
+}

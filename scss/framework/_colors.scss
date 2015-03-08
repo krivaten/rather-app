@@ -17,14 +17,26 @@
  */
 .text-primary {
 	color: $primary-color;
+	
+	&:active {
+		color: darken($primary-color, 20%)
+	}
 }
 
 .text-secondary {
 	color: $secondary-color;
+
+	&:active {
+		color: darken($secondary-color, 20%)
+	}
 }
 
 .text-tertiary {
 	color: $tertiary-color;
+
+	&:active {
+		color: darken($tertiary-color, 20%)
+	}
 }
 
 /**

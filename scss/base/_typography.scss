@@ -28,9 +28,7 @@ a {
   text-decoration: none;
   transition: color 0.1s linear;
 
-  &:active,
-  &:focus,
-  &:hover {
+  &:active {
     color: darken($action-color, 15%);
   }
 
