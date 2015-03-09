@@ -1,0 +1,11 @@
+/**
+ * Primary layout styles
+ */
+.layout.primary {
+	
+	&.input-focus {
+		footer {
+			display: none;
+		}
+	}
+}

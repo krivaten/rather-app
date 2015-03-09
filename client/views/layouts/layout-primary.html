@@ -1,5 +1,5 @@
 <template name="layoutPrimary">
-	<div class="layout primary">
+	<div class="layout primary {{#if inputFocus}}input-focus{{/if}}">
 		{{#unless isActiveTemplate "index"}}
 			{{> layoutHeader}}
 		{{/unless}}
