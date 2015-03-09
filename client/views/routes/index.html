@@ -5,6 +5,14 @@
 			<div class="ratio___content padding---x">
 				{{> svgLogo}}
 			</div>
+
+			<div class="ratio___footer">
+				{{#if creatingAccount}}
+					<h3>create an account</h3>
+				{{else}}
+					<h3>sign in</h3>
+				{{/if}}
+			</div>
 		</div>
 
 		<div class="padding">
@@ -21,21 +29,22 @@
 
 			<div class="divider divider---bottom">or</div>
 
-			<form class="form---sign-in">
+			<form class="form---sign-in" novalidate>
 				<div class="input">
-					<input type="text" placeholder="Username" />
+					<input type="text" name="username" placeholder="Username" />
 				</div>
 				<div class="input input---collapsible {{#unless creatingAccount}}input---collapsed{{/unless}}">
-					<input type="text" placeholder="Email" />
+					<input type="email" name="email" placeholder="Email" />
 				</div>
 				<div class="input input---group">
 					<a href="#" class="input-something">Forgot?</a>
-					<input type="password" placeholder="Password" data-padding-right="55px" />
+					<input type="password" name="password" placeholder="Password" data-padding-right="55px" />
 				</div>
+				<button type="submit" class="btn btn-block btn-primary">HERE</button>
 			</form>
 
 		</div>
-		
+
 		<footer class="footer footer---text">
 			<div class="padding---x">
 				<div class="row">
