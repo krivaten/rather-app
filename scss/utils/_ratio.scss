@@ -43,20 +43,18 @@
 		background-repeat: no-repeat;
 	}
 
-	.ratio-content {
-		position:  absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-	}
-
-
 	.ratio___content {
 		@include transform(translate3d(0, -50%, 0));
 		width: 100%;
 		position: absolute;
 		top: 50%;
+	}
+
+	.ratio___footer {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		text-align: center;
 	}
 	
 	// thumbnail overlay
