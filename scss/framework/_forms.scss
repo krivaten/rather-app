@@ -41,6 +41,7 @@
 
 	&.input---collapsible {
 		@include transition(height 0.2s ease-in-out, opacity 0.2s ease-in-out);
+		@include transform(translateZ(0));
 		height: $base-input-height;
 		overflow: hidden;
 	}

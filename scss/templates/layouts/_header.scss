@@ -2,13 +2,28 @@
  * Header styles
  */
 .header {
+	background: $white; 
 	
 	.svg {
 		&.logo-sm {
 			position: relative;
 			height: $header-height - ($base-padding * 2);
-			top: $base-padding;
-			left: $base-padding;
+			top: 2px;
+		}
+	}
+
+	.header___back {
+		display: inline-block;
+		height: $header-height;
+		line-height: $header-height;
+		padding: 0 $base-padding;
+
+		i {
+		}
+
+
+		&:active {
+			background: rgba($black, 0.1);
 		}
 	}
 }
