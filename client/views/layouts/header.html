@@ -1,6 +1,14 @@
 <template name="layoutHeader">
 	<header class="header">
-		{{> svgLogoSm}}
+
+		<a href="{{pathFor btnBack}}" class="header___back">
+			{{#if btnBack}}
+				<i class="ion ion-chevron-left"></i>
+			{{/if}}
+
+			{{> svgLogoSm}}
+		</a>
+
 		{{#if currentUser}}
 			<div class="header-user">
 				<a href="{{pathFor 'account'}}" class="btn">

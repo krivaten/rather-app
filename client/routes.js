@@ -25,11 +25,17 @@ Router.route('index', function () {
 	this.render('index');
 });
 
-Router.route('info/terms-of-service', function () {
+Router.route('info/terms-of-service', {
+		
+		// Set btnBack
+		btnBack: 'index'
+	
+	}, function () {
 
-	// Render the index page
-	this.render('infoTermsOfService');
-});
+		// Render the index page
+		this.render('infoTermsOfService');
+
+	});
 
 
 /**

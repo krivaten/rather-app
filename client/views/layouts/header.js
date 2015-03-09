@@ -27,5 +27,17 @@ Template.layoutHeader.helpers({
 	 */
 	hideCompleted: function () {
 		return Session.get("hideCompleted");
+	},
+
+
+	/**
+	 * Get btnBack value
+	 *
+	 * @method btnBack
+	 * @return {String} Value of btnBack option on route
+	 * @since v0.1.0
+	 */
+	btnBack: function() {
+		return Router.current().route.options.btnBack;
 	}
 });
