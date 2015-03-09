@@ -1,13 +1,15 @@
 <template name="layoutHeader">
 	<header class="header">
 
-		<a href="{{pathFor btnBack}}" class="header___back">
-			{{#if btnBack}}
+		{{#if btnBack}}
+			<a href="{{pathFor btnBack}}" class="header___back">
 				<i class="ion ion-chevron-left"></i>
-			{{/if}}
 
+				{{> svgLogoSm}}
+			</a>
+		{{else}}
 			{{> svgLogoSm}}
-		</a>
+		{{/if}}
 
 		{{#if currentUser}}
 			<div class="header-user">
