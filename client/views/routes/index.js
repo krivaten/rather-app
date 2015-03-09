@@ -24,7 +24,7 @@ Template.index.events({
 	 *
 	 * @since v0.1.0
 	 */
-	'click .sign-in-facebook': function(e, tmpl) {
+	'click .sign-in---facebook': function(e, tmpl) {
 		Meteor.loginWithFacebook({
 			requestPermissions: ['public_profile', 'email']
 		}, function(err) {
@@ -45,7 +45,7 @@ Template.index.events({
 	 *
 	 * @since v0.1.0
 	 */
-	'click .sign-in-twitter': function(e, tmpl) {
+	'click .sign-in---twitter': function(e, tmpl) {
 		Meteor.loginWithTwitter({
 			requestPermissions: ['user']
 		}, function(err) {
