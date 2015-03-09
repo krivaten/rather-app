@@ -3,6 +3,7 @@
   "dependencies": {
     "ionicons": "~2.0.1",
     "moment": "~2.9.0",
-    "lodash": "~3.1.0"
+    "lodash": "~3.1.0",
+    "velocity": "~1.2.2"
   }
 }
