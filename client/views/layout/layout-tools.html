@@ -1,0 +1,28 @@
+<template name="layoutTools">
+
+	{{#if navRightVisible}}
+		<div class="overlay overlay---nav-right-toggle"></div>
+	{{/if}}
+
+	<div class="drawer">
+		<div class="drawer___content">
+			<div class="ratio ratio---16-9 ratio---bg">
+				<div class="ratio___content padding---x">
+					<h3>Profile stuff here</h3>
+				</div>
+			</div>
+
+			<div class="header___nav-right">
+				<ul class="list">
+					<li class="list___item list___item---link">
+						<a href="{{pathFor "infoFeedBack"}}">Feedback</a>
+					</li>
+					<li class="list___item list___item---link">
+						<a href="{{pathFor "infoHelp"}}">Help</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="drawer___trigger"></div>
+	</div>
+</template>
