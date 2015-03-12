@@ -4,7 +4,7 @@
  * @method pluralize
  * @param {String} string String to pluralize
  * @return {String} Pluralized string
- * @since v0.0.1
+ * @since v0.1.0
  */
 var pluralize = function(string) {
 	var plural = string;
