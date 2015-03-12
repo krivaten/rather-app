@@ -4,8 +4,8 @@
 .input {
 	position: relative;
 	border-top: $base-border;
-	padding-left: $base-padding;
-	padding-right: $base-padding;
+	padding-left: $spacing-sm;
+	padding-right: $spacing-sm;
 	text-transform: lowercase;
 
 	&:first-of-type {

@@ -1,15 +1,19 @@
-.container {
+.main {
 	.header + & {
 		padding-top: $header-height;
+	}
+
+	.nav + & {
+		padding-top: ($header-height + $nav-height);
 	}
 }
 
 .padding {
 	position: relative;
-	padding: $base-padding;
+	padding: $spacing-sm;
 }
 
 .padding---x {
-	padding-left: $base-padding;
-	padding-right: $base-padding;
+	padding-left: $spacing-sm;
+	padding-right: $spacing-sm;
 }

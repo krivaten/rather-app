@@ -21,7 +21,6 @@
  * Framework
  */
 @import 'framework/base';
-@import 'framework/header';
 @import 'framework/colors';
 @import 'framework/footer';
 @import 'framework/container';
@@ -29,6 +28,7 @@
 @import 'framework/tasks';
 @import 'framework/alerts';
 @import 'framework/forms';
+@import 'framework/list-groups';
 @import 'framework/typography';
 
 /**
@@ -42,6 +42,27 @@
  * Temapltes
  */
 @import 'templates/layouts/header';
+@import 'templates/layouts/header-nav';
 @import 'templates/layouts/layout';
+@import 'templates/layouts/layout-tools';
 @import 'templates/routes/index';
 @import 'templates/routes/account/index';
+
+
+.layout {
+
+	/**
+	 * Android Styles
+	 */
+	&.os-android {
+		@import 'platforms/android/ionicons';
+	}
+
+	/**
+	 * iOS Styles
+	 */
+	&.os-ios {
+		@import 'platforms/ios/ionicons';
+	}
+
+}
