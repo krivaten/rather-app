@@ -1,8 +1,14 @@
+var feedNavigation = [
+	{title: 'Home', path: 'feed'},
+	{title: 'Popular', path: 'feed'},
+	{title: 'Sponsored', path: 'feed'}
+];
+
 /**
  * Router
  */
 Router.configure({
-	layoutTemplate: 'layoutPrimary'
+	layoutTemplate: 'layout'
 });
 
 
@@ -19,17 +25,17 @@ Router.route('/', function () {
 Router.route('index', function () {
 
 	// Make sure user is logged out
-	if (_.isObject(Meteor.user())) return Router.go('feed');
+	if (Meteor.userId()) return Router.go('feed');
 
 	// Render the index page
 	this.render('index');
 });
 
 Router.route('info/terms-of-service', {
-		
+
 		// Set btnBack
 		btnBack: 'index'
-	
+
 	}, function () {
 
 		// Render the index page
@@ -51,12 +57,35 @@ Router.route('account', function () {
 
 
 /**
- * Feed Routes
+ * Feed route
+ * @since v0.1.0
  */
 Router.route('feed', function () {
 
-	// Make sure user is logged in
-	if (!_.isObject(Meteor.user())) return Router.go('index');
-
-	this.render('feedIndex');
+	// Redirect user to index
+	Router.go('feed/index');
 });
+
+
+/**
+ * Feed Index route
+ */
+Router.route('feed/index', function () {
+
+		// Make sure user is logged in
+		if (!_.isObject(Meteor.user())) return Router.go('index');
+
+		this.render('headerNavigation', {
+			to: 'nav',
+			data: {
+				navigation: feedNavigation
+			}
+		});
+		this.render('feedIndex', {
+			data: function() {
+				return {
+					test: true
+				};
+			}
+		});
+	});
