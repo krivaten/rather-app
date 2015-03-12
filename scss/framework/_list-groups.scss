@@ -1,0 +1,21 @@
+/**
+ * List group styles
+ */
+.list {
+	padding: $spacing-xs 0;
+
+	.list___item---link {
+		a {
+			display: block;
+			height: $spacing-lg;
+			line-height: $spacing-lg;
+			padding: 0 $spacing-sm;
+			color: $black;
+
+			&:active {
+				color: $black;
+				background: rgba($black, 0.1);
+			}
+		}
+	}
+}
