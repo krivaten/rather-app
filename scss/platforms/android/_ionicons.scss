@@ -1,0 +1,385 @@
+/**
+ * Android Ionicons
+ */
+.#{$ionicons-prefix}add:before {
+	content: $ionicon-var-android-add;
+}
+.#{$ionicons-prefix}add-circle:before {
+	content: $ionicon-var-android-add-circle;
+}
+.#{$ionicons-prefix}alarm-clock:before {
+	content: $ionicon-var-android-alarm-clock;
+}
+.#{$ionicons-prefix}alert:before {
+	content: $ionicon-var-android-alert;
+}
+.#{$ionicons-prefix}apps:before {
+	content: $ionicon-var-android-apps;
+}
+.#{$ionicons-prefix}archive:before {
+	content: $ionicon-var-android-archive;
+}
+.#{$ionicons-prefix}arrow-back:before {
+	content: $ionicon-var-android-arrow-back;
+}
+.#{$ionicons-prefix}arrow-down:before {
+	content: $ionicon-var-android-arrow-down;
+}
+.#{$ionicons-prefix}arrow-dropdown:before {
+	content: $ionicon-var-android-arrow-dropdown;
+}
+.#{$ionicons-prefix}arrow-dropdown-circle:before {
+	content: $ionicon-var-android-arrow-dropdown-circle;
+}
+.#{$ionicons-prefix}arrow-dropleft:before {
+	content: $ionicon-var-android-arrow-dropleft;
+}
+.#{$ionicons-prefix}arrow-dropleft-circle:before {
+	content: $ionicon-var-android-arrow-dropleft-circle;
+}
+.#{$ionicons-prefix}arrow-dropright:before {
+	content: $ionicon-var-android-arrow-dropright;
+}
+.#{$ionicons-prefix}arrow-dropright-circle:before {
+	content: $ionicon-var-android-arrow-dropright-circle;
+}
+.#{$ionicons-prefix}arrow-dropup:before {
+	content: $ionicon-var-android-arrow-dropup;
+}
+.#{$ionicons-prefix}arrow-dropup-circle:before {
+	content: $ionicon-var-android-arrow-dropup-circle;
+}
+.#{$ionicons-prefix}arrow-forward:before {
+	content: $ionicon-var-android-arrow-forward;
+}
+.#{$ionicons-prefix}arrow-up:before {
+	content: $ionicon-var-android-arrow-up;
+}
+.#{$ionicons-prefix}attach:before {
+	content: $ionicon-var-android-attach;
+}
+.#{$ionicons-prefix}bar:before {
+	content: $ionicon-var-android-bar;
+}
+.#{$ionicons-prefix}bicycle:before {
+	content: $ionicon-var-android-bicycle;
+}
+.#{$ionicons-prefix}boat:before {
+	content: $ionicon-var-android-boat;
+}
+.#{$ionicons-prefix}bookmark:before {
+	content: $ionicon-var-android-bookmark;
+}
+.#{$ionicons-prefix}bulb:before {
+	content: $ionicon-var-android-bulb;
+}
+.#{$ionicons-prefix}bus:before {
+	content: $ionicon-var-android-bus;
+}
+.#{$ionicons-prefix}calendar:before {
+	content: $ionicon-var-android-calendar;
+}
+.#{$ionicons-prefix}call:before {
+	content: $ionicon-var-android-call;
+}
+.#{$ionicons-prefix}camera:before {
+	content: $ionicon-var-android-camera;
+}
+.#{$ionicons-prefix}cancel:before {
+	content: $ionicon-var-android-cancel;
+}
+.#{$ionicons-prefix}car:before {
+	content: $ionicon-var-android-car;
+}
+.#{$ionicons-prefix}cart:before {
+	content: $ionicon-var-android-cart;
+}
+.#{$ionicons-prefix}chat:before {
+	content: $ionicon-var-android-chat;
+}
+.#{$ionicons-prefix}checkbox:before {
+	content: $ionicon-var-android-checkbox;
+}
+.#{$ionicons-prefix}checkbox-blank:before {
+	content: $ionicon-var-android-checkbox-blank;
+}
+.#{$ionicons-prefix}checkbox-outline:before {
+	content: $ionicon-var-android-checkbox-outline;
+}
+.#{$ionicons-prefix}checkbox-outline-blank:before {
+	content: $ionicon-var-android-checkbox-outline-blank;
+}
+.#{$ionicons-prefix}checkmark-circle:before {
+	content: $ionicon-var-android-checkmark-circle;
+}
+.#{$ionicons-prefix}clipboard:before {
+	content: $ionicon-var-android-clipboard;
+}
+.#{$ionicons-prefix}close:before {
+	content: $ionicon-var-android-close;
+}
+.#{$ionicons-prefix}cloud:before {
+	content: $ionicon-var-android-cloud;
+}
+.#{$ionicons-prefix}cloud-circle:before {
+	content: $ionicon-var-android-cloud-circle;
+}
+.#{$ionicons-prefix}cloud-done:before {
+	content: $ionicon-var-android-cloud-done;
+}
+.#{$ionicons-prefix}cloud-outline:before {
+	content: $ionicon-var-android-cloud-outline;
+}
+.#{$ionicons-prefix}color-palette:before {
+	content: $ionicon-var-android-color-palette;
+}
+.#{$ionicons-prefix}compass:before {
+	content: $ionicon-var-android-compass;
+}
+.#{$ionicons-prefix}contact:before {
+	content: $ionicon-var-android-contact;
+}
+.#{$ionicons-prefix}contacts:before {
+	content: $ionicon-var-android-contacts;
+}
+.#{$ionicons-prefix}contract:before {
+	content: $ionicon-var-android-contract;
+}
+.#{$ionicons-prefix}create:before {
+	content: $ionicon-var-android-create;
+}
+.#{$ionicons-prefix}delete:before {
+	content: $ionicon-var-android-delete;
+}
+.#{$ionicons-prefix}desktop:before {
+	content: $ionicon-var-android-desktop;
+}
+.#{$ionicons-prefix}document:before {
+	content: $ionicon-var-android-document;
+}
+.#{$ionicons-prefix}done:before {
+	content: $ionicon-var-android-done;
+}
+.#{$ionicons-prefix}done-all:before {
+	content: $ionicon-var-android-done-all;
+}
+.#{$ionicons-prefix}download:before {
+	content: $ionicon-var-android-download;
+}
+.#{$ionicons-prefix}drafts:before {
+	content: $ionicon-var-android-drafts;
+}
+.#{$ionicons-prefix}exit:before {
+	content: $ionicon-var-android-exit;
+}
+.#{$ionicons-prefix}expand:before {
+	content: $ionicon-var-android-expand;
+}
+.#{$ionicons-prefix}favorite:before {
+	content: $ionicon-var-android-favorite;
+}
+.#{$ionicons-prefix}favorite-outline:before {
+	content: $ionicon-var-android-favorite-outline;
+}
+.#{$ionicons-prefix}film:before {
+	content: $ionicon-var-android-film;
+}
+.#{$ionicons-prefix}folder:before {
+	content: $ionicon-var-android-folder;
+}
+.#{$ionicons-prefix}folder-open:before {
+	content: $ionicon-var-android-folder-open;
+}
+.#{$ionicons-prefix}funnel:before {
+	content: $ionicon-var-android-funnel;
+}
+.#{$ionicons-prefix}globe:before {
+	content: $ionicon-var-android-globe;
+}
+.#{$ionicons-prefix}hand:before {
+	content: $ionicon-var-android-hand;
+}
+.#{$ionicons-prefix}hangout:before {
+	content: $ionicon-var-android-hangout;
+}
+.#{$ionicons-prefix}happy:before {
+	content: $ionicon-var-android-happy;
+}
+.#{$ionicons-prefix}home:before {
+	content: $ionicon-var-android-home;
+}
+.#{$ionicons-prefix}image:before {
+	content: $ionicon-var-android-image;
+}
+.#{$ionicons-prefix}laptop:before {
+	content: $ionicon-var-android-laptop;
+}
+.#{$ionicons-prefix}list:before {
+	content: $ionicon-var-android-list;
+}
+.#{$ionicons-prefix}locate:before {
+	content: $ionicon-var-android-locate;
+}
+.#{$ionicons-prefix}lock:before {
+	content: $ionicon-var-android-lock;
+}
+.#{$ionicons-prefix}mail:before {
+	content: $ionicon-var-android-mail;
+}
+.#{$ionicons-prefix}map:before {
+	content: $ionicon-var-android-map;
+}
+.#{$ionicons-prefix}menu:before {
+	content: $ionicon-var-android-menu;
+}
+.#{$ionicons-prefix}microphone:before {
+	content: $ionicon-var-android-microphone;
+}
+.#{$ionicons-prefix}microphone-off:before {
+	content: $ionicon-var-android-microphone-off;
+}
+.#{$ionicons-prefix}more-horizontal:before {
+	content: $ionicon-var-android-more-horizontal;
+}
+.#{$ionicons-prefix}more-vertical:before {
+	content: $ionicon-var-android-more-vertical;
+}
+// .#{$ionicons-prefix}navigate:before { content: $ionicon-var-android-navigate; }
+.#{$ionicons-prefix}notifications:before {
+	content: $ionicon-var-android-notifications;
+}
+.#{$ionicons-prefix}notifications-none:before {
+	content: $ionicon-var-android-notifications-none;
+}
+.#{$ionicons-prefix}notifications-off:before {
+	content: $ionicon-var-android-notifications-off;
+}
+.#{$ionicons-prefix}open:before {
+	content: $ionicon-var-android-open;
+}
+.#{$ionicons-prefix}options:before {
+	content: $ionicon-var-android-options;
+}
+.#{$ionicons-prefix}people:before {
+	content: $ionicon-var-android-people;
+}
+.#{$ionicons-prefix}person:before {
+	content: $ionicon-var-android-person;
+}
+.#{$ionicons-prefix}person-add:before {
+	content: $ionicon-var-android-person-add;
+}
+.#{$ionicons-prefix}phone-landscape:before {
+	content: $ionicon-var-android-phone-landscape;
+}
+.#{$ionicons-prefix}phone-portrait:before {
+	content: $ionicon-var-android-phone-portrait;
+}
+.#{$ionicons-prefix}pin:before {
+	content: $ionicon-var-android-pin;
+}
+.#{$ionicons-prefix}plane:before {
+	content: $ionicon-var-android-plane;
+}
+.#{$ionicons-prefix}playstore:before {
+	content: $ionicon-var-android-playstore;
+}
+.#{$ionicons-prefix}print:before {
+	content: $ionicon-var-android-print;
+}
+.#{$ionicons-prefix}radio-button-off:before {
+	content: $ionicon-var-android-radio-button-off;
+}
+.#{$ionicons-prefix}radio-button-on:before {
+	content: $ionicon-var-android-radio-button-on;
+}
+.#{$ionicons-prefix}refresh:before {
+	content: $ionicon-var-android-refresh;
+}
+.#{$ionicons-prefix}remove:before {
+	content: $ionicon-var-android-remove;
+}
+.#{$ionicons-prefix}remove-circle:before {
+	content: $ionicon-var-android-remove-circle;
+}
+.#{$ionicons-prefix}restaurant:before {
+	content: $ionicon-var-android-restaurant;
+}
+.#{$ionicons-prefix}sad:before {
+	content: $ionicon-var-android-sad;
+}
+.#{$ionicons-prefix}search:before {
+	content: $ionicon-var-android-search;
+}
+.#{$ionicons-prefix}send:before {
+	content: $ionicon-var-android-send;
+}
+.#{$ionicons-prefix}settings:before {
+	content: $ionicon-var-android-settings;
+}
+.#{$ionicons-prefix}share:before {
+	content: $ionicon-var-android-share;
+}
+.#{$ionicons-prefix}share-alt:before {
+	content: $ionicon-var-android-share-alt;
+}
+.#{$ionicons-prefix}star:before {
+	content: $ionicon-var-android-star;
+}
+.#{$ionicons-prefix}star-half:before {
+	content: $ionicon-var-android-star-half;
+}
+.#{$ionicons-prefix}star-outline:before {
+	content: $ionicon-var-android-star-outline;
+}
+.#{$ionicons-prefix}stopwatch:before {
+	content: $ionicon-var-android-stopwatch;
+}
+.#{$ionicons-prefix}subway:before {
+	content: $ionicon-var-android-subway;
+}
+.#{$ionicons-prefix}sunny:before {
+	content: $ionicon-var-android-sunny;
+}
+.#{$ionicons-prefix}sync:before {
+	content: $ionicon-var-android-sync;
+}
+.#{$ionicons-prefix}textsms:before {
+	content: $ionicon-var-android-textsms;
+}
+.#{$ionicons-prefix}time:before {
+	content: $ionicon-var-android-time;
+}
+.#{$ionicons-prefix}train:before {
+	content: $ionicon-var-android-train;
+}
+.#{$ionicons-prefix}unlock:before {
+	content: $ionicon-var-android-unlock;
+}
+.#{$ionicons-prefix}upload:before {
+	content: $ionicon-var-android-upload;
+}
+.#{$ionicons-prefix}volume-down:before {
+	content: $ionicon-var-android-volume-down;
+}
+.#{$ionicons-prefix}volume-mute:before {
+	content: $ionicon-var-android-volume-mute;
+}
+.#{$ionicons-prefix}volume-off:before {
+	content: $ionicon-var-android-volume-off;
+}
+.#{$ionicons-prefix}volume-up:before {
+	content: $ionicon-var-android-volume-up;
+}
+.#{$ionicons-prefix}walk:before {
+	content: $ionicon-var-android-walk;
+}
+.#{$ionicons-prefix}warning:before {
+	content: $ionicon-var-android-warning;
+}
+.#{$ionicons-prefix}watch:before {
+	content: $ionicon-var-android-watch;
+}
+.#{$ionicons-prefix}wifi:before {
+	content: $ionicon-var-android-wifi;
+}

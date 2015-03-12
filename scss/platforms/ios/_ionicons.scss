@@ -1,0 +1,806 @@
+/**
+ * iOS Ionicons
+ */
+.#{$ionicons-prefix}alarm:before {
+	content: $ionicon-var-ios-alarm;
+}
+.#{$ionicons-prefix}alarm-outline:before {
+	content: $ionicon-var-ios-alarm-outline;
+}
+.#{$ionicons-prefix}albums:before {
+	content: $ionicon-var-ios-albums;
+}
+.#{$ionicons-prefix}albums-outline:before {
+	content: $ionicon-var-ios-albums-outline;
+}
+.#{$ionicons-prefix}americanfootball:before {
+	content: $ionicon-var-ios-americanfootball;
+}
+.#{$ionicons-prefix}americanfootball-outline:before {
+	content: $ionicon-var-ios-americanfootball-outline;
+}
+.#{$ionicons-prefix}analytics:before {
+	content: $ionicon-var-ios-analytics;
+}
+.#{$ionicons-prefix}analytics-outline:before {
+	content: $ionicon-var-ios-analytics-outline;
+}
+.#{$ionicons-prefix}arrow-back:before {
+	content: $ionicon-var-ios-arrow-back;
+}
+.#{$ionicons-prefix}arrow-down:before {
+	content: $ionicon-var-ios-arrow-down;
+}
+.#{$ionicons-prefix}arrow-forward:before {
+	content: $ionicon-var-ios-arrow-forward;
+}
+.#{$ionicons-prefix}arrow-left:before {
+	content: $ionicon-var-ios-arrow-left;
+}
+.#{$ionicons-prefix}arrow-right:before {
+	content: $ionicon-var-ios-arrow-right;
+}
+.#{$ionicons-prefix}arrow-thin-down:before {
+	content: $ionicon-var-ios-arrow-thin-down;
+}
+.#{$ionicons-prefix}arrow-thin-left:before {
+	content: $ionicon-var-ios-arrow-thin-left;
+}
+.#{$ionicons-prefix}arrow-thin-right:before {
+	content: $ionicon-var-ios-arrow-thin-right;
+}
+.#{$ionicons-prefix}arrow-thin-up:before {
+	content: $ionicon-var-ios-arrow-thin-up;
+}
+.#{$ionicons-prefix}arrow-up:before {
+	content: $ionicon-var-ios-arrow-up;
+}
+.#{$ionicons-prefix}at:before {
+	content: $ionicon-var-ios-at;
+}
+.#{$ionicons-prefix}at-outline:before {
+	content: $ionicon-var-ios-at-outline;
+}
+.#{$ionicons-prefix}barcode:before {
+	content: $ionicon-var-ios-barcode;
+}
+.#{$ionicons-prefix}barcode-outline:before {
+	content: $ionicon-var-ios-barcode-outline;
+}
+.#{$ionicons-prefix}baseball:before {
+	content: $ionicon-var-ios-baseball;
+}
+.#{$ionicons-prefix}baseball-outline:before {
+	content: $ionicon-var-ios-baseball-outline;
+}
+.#{$ionicons-prefix}basketball:before {
+	content: $ionicon-var-ios-basketball;
+}
+.#{$ionicons-prefix}basketball-outline:before {
+	content: $ionicon-var-ios-basketball-outline;
+}
+.#{$ionicons-prefix}bell:before {
+	content: $ionicon-var-ios-bell;
+}
+.#{$ionicons-prefix}bell-outline:before {
+	content: $ionicon-var-ios-bell-outline;
+}
+.#{$ionicons-prefix}body:before {
+	content: $ionicon-var-ios-body;
+}
+.#{$ionicons-prefix}body-outline:before {
+	content: $ionicon-var-ios-body-outline;
+}
+.#{$ionicons-prefix}bolt:before {
+	content: $ionicon-var-ios-bolt;
+}
+.#{$ionicons-prefix}bolt-outline:before {
+	content: $ionicon-var-ios-bolt-outline;
+}
+.#{$ionicons-prefix}book:before {
+	content: $ionicon-var-ios-book;
+}
+.#{$ionicons-prefix}book-outline:before {
+	content: $ionicon-var-ios-book-outline;
+}
+.#{$ionicons-prefix}bookmarks:before {
+	content: $ionicon-var-ios-bookmarks;
+}
+.#{$ionicons-prefix}bookmarks-outline:before {
+	content: $ionicon-var-ios-bookmarks-outline;
+}
+.#{$ionicons-prefix}box:before {
+	content: $ionicon-var-ios-box;
+}
+.#{$ionicons-prefix}box-outline:before {
+	content: $ionicon-var-ios-box-outline;
+}
+.#{$ionicons-prefix}briefcase:before {
+	content: $ionicon-var-ios-briefcase;
+}
+.#{$ionicons-prefix}briefcase-outline:before {
+	content: $ionicon-var-ios-briefcase-outline;
+}
+.#{$ionicons-prefix}browsers:before {
+	content: $ionicon-var-ios-browsers;
+}
+.#{$ionicons-prefix}browsers-outline:before {
+	content: $ionicon-var-ios-browsers-outline;
+}
+.#{$ionicons-prefix}calculator:before {
+	content: $ionicon-var-ios-calculator;
+}
+.#{$ionicons-prefix}calculator-outline:before {
+	content: $ionicon-var-ios-calculator-outline;
+}
+.#{$ionicons-prefix}calendar:before {
+	content: $ionicon-var-ios-calendar;
+}
+.#{$ionicons-prefix}calendar-outline:before {
+	content: $ionicon-var-ios-calendar-outline;
+}
+.#{$ionicons-prefix}camera:before {
+	content: $ionicon-var-ios-camera;
+}
+.#{$ionicons-prefix}camera-outline:before {
+	content: $ionicon-var-ios-camera-outline;
+}
+.#{$ionicons-prefix}cart:before {
+	content: $ionicon-var-ios-cart;
+}
+.#{$ionicons-prefix}cart-outline:before {
+	content: $ionicon-var-ios-cart-outline;
+}
+.#{$ionicons-prefix}chatboxes:before {
+	content: $ionicon-var-ios-chatboxes;
+}
+.#{$ionicons-prefix}chatboxes-outline:before {
+	content: $ionicon-var-ios-chatboxes-outline;
+}
+.#{$ionicons-prefix}chatbubble:before {
+	content: $ionicon-var-ios-chatbubble;
+}
+.#{$ionicons-prefix}chatbubble-outline:before {
+	content: $ionicon-var-ios-chatbubble-outline;
+}
+.#{$ionicons-prefix}checkmark:before {
+	content: $ionicon-var-ios-checkmark;
+}
+.#{$ionicons-prefix}checkmark-empty:before {
+	content: $ionicon-var-ios-checkmark-empty;
+}
+.#{$ionicons-prefix}checkmark-outline:before {
+	content: $ionicon-var-ios-checkmark-outline;
+}
+.#{$ionicons-prefix}circle-filled:before {
+	content: $ionicon-var-ios-circle-filled;
+}
+.#{$ionicons-prefix}circle-outline:before {
+	content: $ionicon-var-ios-circle-outline;
+}
+.#{$ionicons-prefix}clock:before {
+	content: $ionicon-var-ios-clock;
+}
+.#{$ionicons-prefix}clock-outline:before {
+	content: $ionicon-var-ios-clock-outline;
+}
+.#{$ionicons-prefix}close:before {
+	content: $ionicon-var-ios-close;
+}
+.#{$ionicons-prefix}close-empty:before {
+	content: $ionicon-var-ios-close-empty;
+}
+.#{$ionicons-prefix}close-outline:before {
+	content: $ionicon-var-ios-close-outline;
+}
+.#{$ionicons-prefix}cloud:before {
+	content: $ionicon-var-ios-cloud;
+}
+.#{$ionicons-prefix}cloud-download:before {
+	content: $ionicon-var-ios-cloud-download;
+}
+.#{$ionicons-prefix}cloud-download-outline:before {
+	content: $ionicon-var-ios-cloud-download-outline;
+}
+.#{$ionicons-prefix}cloud-outline:before {
+	content: $ionicon-var-ios-cloud-outline;
+}
+.#{$ionicons-prefix}cloud-upload:before {
+	content: $ionicon-var-ios-cloud-upload;
+}
+.#{$ionicons-prefix}cloud-upload-outline:before {
+	content: $ionicon-var-ios-cloud-upload-outline;
+}
+.#{$ionicons-prefix}cloudy:before {
+	content: $ionicon-var-ios-cloudy;
+}
+.#{$ionicons-prefix}cloudy-night:before {
+	content: $ionicon-var-ios-cloudy-night;
+}
+.#{$ionicons-prefix}cloudy-night-outline:before {
+	content: $ionicon-var-ios-cloudy-night-outline;
+}
+.#{$ionicons-prefix}cloudy-outline:before {
+	content: $ionicon-var-ios-cloudy-outline;
+}
+.#{$ionicons-prefix}cog:before {
+	content: $ionicon-var-ios-cog;
+}
+.#{$ionicons-prefix}cog-outline:before {
+	content: $ionicon-var-ios-cog-outline;
+}
+.#{$ionicons-prefix}color-filter:before {
+	content: $ionicon-var-ios-color-filter;
+}
+.#{$ionicons-prefix}color-filter-outline:before {
+	content: $ionicon-var-ios-color-filter-outline;
+}
+.#{$ionicons-prefix}color-wand:before {
+	content: $ionicon-var-ios-color-wand;
+}
+.#{$ionicons-prefix}color-wand-outline:before {
+	content: $ionicon-var-ios-color-wand-outline;
+}
+.#{$ionicons-prefix}compose:before {
+	content: $ionicon-var-ios-compose;
+}
+.#{$ionicons-prefix}compose-outline:before {
+	content: $ionicon-var-ios-compose-outline;
+}
+.#{$ionicons-prefix}contact:before {
+	content: $ionicon-var-ios-contact;
+}
+.#{$ionicons-prefix}contact-outline:before {
+	content: $ionicon-var-ios-contact-outline;
+}
+.#{$ionicons-prefix}copy:before {
+	content: $ionicon-var-ios-copy;
+}
+.#{$ionicons-prefix}copy-outline:before {
+	content: $ionicon-var-ios-copy-outline;
+}
+.#{$ionicons-prefix}crop:before {
+	content: $ionicon-var-ios-crop;
+}
+.#{$ionicons-prefix}crop-strong:before {
+	content: $ionicon-var-ios-crop-strong;
+}
+.#{$ionicons-prefix}download:before {
+	content: $ionicon-var-ios-download;
+}
+.#{$ionicons-prefix}download-outline:before {
+	content: $ionicon-var-ios-download-outline;
+}
+.#{$ionicons-prefix}drag:before {
+	content: $ionicon-var-ios-drag;
+}
+.#{$ionicons-prefix}email:before {
+	content: $ionicon-var-ios-email;
+}
+.#{$ionicons-prefix}email-outline:before {
+	content: $ionicon-var-ios-email-outline;
+}
+.#{$ionicons-prefix}eye:before {
+	content: $ionicon-var-ios-eye;
+}
+.#{$ionicons-prefix}eye-outline:before {
+	content: $ionicon-var-ios-eye-outline;
+}
+.#{$ionicons-prefix}fastforward:before {
+	content: $ionicon-var-ios-fastforward;
+}
+.#{$ionicons-prefix}fastforward-outline:before {
+	content: $ionicon-var-ios-fastforward-outline;
+}
+.#{$ionicons-prefix}filing:before {
+	content: $ionicon-var-ios-filing;
+}
+.#{$ionicons-prefix}filing-outline:before {
+	content: $ionicon-var-ios-filing-outline;
+}
+.#{$ionicons-prefix}film:before {
+	content: $ionicon-var-ios-film;
+}
+.#{$ionicons-prefix}film-outline:before {
+	content: $ionicon-var-ios-film-outline;
+}
+.#{$ionicons-prefix}flag:before {
+	content: $ionicon-var-ios-flag;
+}
+.#{$ionicons-prefix}flag-outline:before {
+	content: $ionicon-var-ios-flag-outline;
+}
+.#{$ionicons-prefix}flame:before {
+	content: $ionicon-var-ios-flame;
+}
+.#{$ionicons-prefix}flame-outline:before {
+	content: $ionicon-var-ios-flame-outline;
+}
+.#{$ionicons-prefix}flask:before {
+	content: $ionicon-var-ios-flask;
+}
+.#{$ionicons-prefix}flask-outline:before {
+	content: $ionicon-var-ios-flask-outline;
+}
+.#{$ionicons-prefix}flower:before {
+	content: $ionicon-var-ios-flower;
+}
+.#{$ionicons-prefix}flower-outline:before {
+	content: $ionicon-var-ios-flower-outline;
+}
+.#{$ionicons-prefix}folder:before {
+	content: $ionicon-var-ios-folder;
+}
+.#{$ionicons-prefix}folder-outline:before {
+	content: $ionicon-var-ios-folder-outline;
+}
+.#{$ionicons-prefix}football:before {
+	content: $ionicon-var-ios-football;
+}
+.#{$ionicons-prefix}football-outline:before {
+	content: $ionicon-var-ios-football-outline;
+}
+.#{$ionicons-prefix}game-controller-a:before {
+	content: $ionicon-var-ios-game-controller-a;
+}
+.#{$ionicons-prefix}game-controller-a-outline:before {
+	content: $ionicon-var-ios-game-controller-a-outline;
+}
+.#{$ionicons-prefix}game-controller-b:before {
+	content: $ionicon-var-ios-game-controller-b;
+}
+.#{$ionicons-prefix}game-controller-b-outline:before {
+	content: $ionicon-var-ios-game-controller-b-outline;
+}
+.#{$ionicons-prefix}gear:before {
+	content: $ionicon-var-ios-gear;
+}
+.#{$ionicons-prefix}gear-outline:before {
+	content: $ionicon-var-ios-gear-outline;
+}
+.#{$ionicons-prefix}glasses:before {
+	content: $ionicon-var-ios-glasses;
+}
+.#{$ionicons-prefix}glasses-outline:before {
+	content: $ionicon-var-ios-glasses-outline;
+}
+.#{$ionicons-prefix}grid-view:before {
+	content: $ionicon-var-ios-grid-view;
+}
+.#{$ionicons-prefix}grid-view-outline:before {
+	content: $ionicon-var-ios-grid-view-outline;
+}
+.#{$ionicons-prefix}heart:before {
+	content: $ionicon-var-ios-heart;
+}
+.#{$ionicons-prefix}heart-outline:before {
+	content: $ionicon-var-ios-heart-outline;
+}
+.#{$ionicons-prefix}help:before {
+	content: $ionicon-var-ios-help;
+}
+.#{$ionicons-prefix}help-empty:before {
+	content: $ionicon-var-ios-help-empty;
+}
+.#{$ionicons-prefix}help-outline:before {
+	content: $ionicon-var-ios-help-outline;
+}
+.#{$ionicons-prefix}home:before {
+	content: $ionicon-var-ios-home;
+}
+.#{$ionicons-prefix}home-outline:before {
+	content: $ionicon-var-ios-home-outline;
+}
+.#{$ionicons-prefix}infinite:before {
+	content: $ionicon-var-ios-infinite;
+}
+.#{$ionicons-prefix}infinite-outline:before {
+	content: $ionicon-var-ios-infinite-outline;
+}
+.#{$ionicons-prefix}information:before {
+	content: $ionicon-var-ios-information;
+}
+.#{$ionicons-prefix}information-empty:before {
+	content: $ionicon-var-ios-information-empty;
+}
+.#{$ionicons-prefix}information-outline:before {
+	content: $ionicon-var-ios-information-outline;
+}
+.#{$ionicons-prefix}ionic-outline:before {
+	content: $ionicon-var-ios-ionic-outline;
+}
+.#{$ionicons-prefix}keypad:before {
+	content: $ionicon-var-ios-keypad;
+}
+.#{$ionicons-prefix}keypad-outline:before {
+	content: $ionicon-var-ios-keypad-outline;
+}
+.#{$ionicons-prefix}lightbulb:before {
+	content: $ionicon-var-ios-lightbulb;
+}
+.#{$ionicons-prefix}lightbulb-outline:before {
+	content: $ionicon-var-ios-lightbulb-outline;
+}
+.#{$ionicons-prefix}list:before {
+	content: $ionicon-var-ios-list;
+}
+.#{$ionicons-prefix}list-outline:before {
+	content: $ionicon-var-ios-list-outline;
+}
+.#{$ionicons-prefix}location:before {
+	content: $ionicon-var-ios-location;
+}
+.#{$ionicons-prefix}location-outline:before {
+	content: $ionicon-var-ios-location-outline;
+}
+.#{$ionicons-prefix}locked:before {
+	content: $ionicon-var-ios-locked;
+}
+.#{$ionicons-prefix}locked-outline:before {
+	content: $ionicon-var-ios-locked-outline;
+}
+.#{$ionicons-prefix}loop:before {
+	content: $ionicon-var-ios-loop;
+}
+.#{$ionicons-prefix}loop-strong:before {
+	content: $ionicon-var-ios-loop-strong;
+}
+.#{$ionicons-prefix}medical:before {
+	content: $ionicon-var-ios-medical;
+}
+.#{$ionicons-prefix}medical-outline:before {
+	content: $ionicon-var-ios-medical-outline;
+}
+.#{$ionicons-prefix}medkit:before {
+	content: $ionicon-var-ios-medkit;
+}
+.#{$ionicons-prefix}medkit-outline:before {
+	content: $ionicon-var-ios-medkit-outline;
+}
+.#{$ionicons-prefix}mic:before {
+	content: $ionicon-var-ios-mic;
+}
+.#{$ionicons-prefix}mic-off:before {
+	content: $ionicon-var-ios-mic-off;
+}
+.#{$ionicons-prefix}mic-outline:before {
+	content: $ionicon-var-ios-mic-outline;
+}
+.#{$ionicons-prefix}minus:before {
+	content: $ionicon-var-ios-minus;
+}
+.#{$ionicons-prefix}minus-empty:before {
+	content: $ionicon-var-ios-minus-empty;
+}
+.#{$ionicons-prefix}minus-outline:before {
+	content: $ionicon-var-ios-minus-outline;
+}
+.#{$ionicons-prefix}monitor:before {
+	content: $ionicon-var-ios-monitor;
+}
+.#{$ionicons-prefix}monitor-outline:before {
+	content: $ionicon-var-ios-monitor-outline;
+}
+.#{$ionicons-prefix}moon:before {
+	content: $ionicon-var-ios-moon;
+}
+.#{$ionicons-prefix}moon-outline:before {
+	content: $ionicon-var-ios-moon-outline;
+}
+.#{$ionicons-prefix}more:before {
+	content: $ionicon-var-ios-more;
+}
+.#{$ionicons-prefix}more-outline:before {
+	content: $ionicon-var-ios-more-outline;
+}
+.#{$ionicons-prefix}musical-note:before {
+	content: $ionicon-var-ios-musical-note;
+}
+.#{$ionicons-prefix}musical-notes:before {
+	content: $ionicon-var-ios-musical-notes;
+}
+// .#{$ionicons-prefix}navigate:before { content: $ionicon-var-ios-navigate; }
+// .#{$ionicons-prefix}navigate-outline:before { content: $ionicon-var-ios-navigate-outline; }
+.#{$ionicons-prefix}nutrition:before {
+	content: $ionicon-var-ios-nutrition;
+}
+.#{$ionicons-prefix}nutrition-outline:before {
+	content: $ionicon-var-ios-nutrition-outline;
+}
+.#{$ionicons-prefix}paper:before {
+	content: $ionicon-var-ios-paper;
+}
+.#{$ionicons-prefix}paper-outline:before {
+	content: $ionicon-var-ios-paper-outline;
+}
+.#{$ionicons-prefix}paperplane:before {
+	content: $ionicon-var-ios-paperplane;
+}
+.#{$ionicons-prefix}paperplane-outline:before {
+	content: $ionicon-var-ios-paperplane-outline;
+}
+.#{$ionicons-prefix}partlysunny:before {
+	content: $ionicon-var-ios-partlysunny;
+}
+.#{$ionicons-prefix}partlysunny-outline:before {
+	content: $ionicon-var-ios-partlysunny-outline;
+}
+.#{$ionicons-prefix}pause:before {
+	content: $ionicon-var-ios-pause;
+}
+.#{$ionicons-prefix}pause-outline:before {
+	content: $ionicon-var-ios-pause-outline;
+}
+.#{$ionicons-prefix}paw:before {
+	content: $ionicon-var-ios-paw;
+}
+.#{$ionicons-prefix}paw-outline:before {
+	content: $ionicon-var-ios-paw-outline;
+}
+.#{$ionicons-prefix}people:before {
+	content: $ionicon-var-ios-people;
+}
+.#{$ionicons-prefix}people-outline:before {
+	content: $ionicon-var-ios-people-outline;
+}
+.#{$ionicons-prefix}person:before {
+	content: $ionicon-var-ios-person;
+}
+.#{$ionicons-prefix}person-outline:before {
+	content: $ionicon-var-ios-person-outline;
+}
+.#{$ionicons-prefix}personadd:before {
+	content: $ionicon-var-ios-personadd;
+}
+.#{$ionicons-prefix}personadd-outline:before {
+	content: $ionicon-var-ios-personadd-outline;
+}
+.#{$ionicons-prefix}photos:before {
+	content: $ionicon-var-ios-photos;
+}
+.#{$ionicons-prefix}photos-outline:before {
+	content: $ionicon-var-ios-photos-outline;
+}
+.#{$ionicons-prefix}pie:before {
+	content: $ionicon-var-ios-pie;
+}
+.#{$ionicons-prefix}pie-outline:before {
+	content: $ionicon-var-ios-pie-outline;
+}
+.#{$ionicons-prefix}pint:before {
+	content: $ionicon-var-ios-pint;
+}
+.#{$ionicons-prefix}pint-outline:before {
+	content: $ionicon-var-ios-pint-outline;
+}
+.#{$ionicons-prefix}play:before {
+	content: $ionicon-var-ios-play;
+}
+.#{$ionicons-prefix}play-outline:before {
+	content: $ionicon-var-ios-play-outline;
+}
+.#{$ionicons-prefix}plus:before {
+	content: $ionicon-var-ios-plus;
+}
+.#{$ionicons-prefix}plus-empty:before {
+	content: $ionicon-var-ios-plus-empty;
+}
+.#{$ionicons-prefix}plus-outline:before {
+	content: $ionicon-var-ios-plus-outline;
+}
+.#{$ionicons-prefix}pricetag:before {
+	content: $ionicon-var-ios-pricetag;
+}
+.#{$ionicons-prefix}pricetag-outline:before {
+	content: $ionicon-var-ios-pricetag-outline;
+}
+.#{$ionicons-prefix}pricetags:before {
+	content: $ionicon-var-ios-pricetags;
+}
+.#{$ionicons-prefix}pricetags-outline:before {
+	content: $ionicon-var-ios-pricetags-outline;
+}
+.#{$ionicons-prefix}printer:before {
+	content: $ionicon-var-ios-printer;
+}
+.#{$ionicons-prefix}printer-outline:before {
+	content: $ionicon-var-ios-printer-outline;
+}
+.#{$ionicons-prefix}pulse:before {
+	content: $ionicon-var-ios-pulse;
+}
+.#{$ionicons-prefix}pulse-strong:before {
+	content: $ionicon-var-ios-pulse-strong;
+}
+.#{$ionicons-prefix}rainy:before {
+	content: $ionicon-var-ios-rainy;
+}
+.#{$ionicons-prefix}rainy-outline:before {
+	content: $ionicon-var-ios-rainy-outline;
+}
+.#{$ionicons-prefix}recording:before {
+	content: $ionicon-var-ios-recording;
+}
+.#{$ionicons-prefix}recording-outline:before {
+	content: $ionicon-var-ios-recording-outline;
+}
+.#{$ionicons-prefix}redo:before {
+	content: $ionicon-var-ios-redo;
+}
+.#{$ionicons-prefix}redo-outline:before {
+	content: $ionicon-var-ios-redo-outline;
+}
+.#{$ionicons-prefix}refresh:before {
+	content: $ionicon-var-ios-refresh;
+}
+.#{$ionicons-prefix}refresh-empty:before {
+	content: $ionicon-var-ios-refresh-empty;
+}
+.#{$ionicons-prefix}refresh-outline:before {
+	content: $ionicon-var-ios-refresh-outline;
+}
+.#{$ionicons-prefix}reload:before {
+	content: $ionicon-var-ios-reload;
+}
+.#{$ionicons-prefix}reverse-camera:before {
+	content: $ionicon-var-ios-reverse-camera;
+}
+.#{$ionicons-prefix}reverse-camera-outline:before {
+	content: $ionicon-var-ios-reverse-camera-outline;
+}
+.#{$ionicons-prefix}rewind:before {
+	content: $ionicon-var-ios-rewind;
+}
+.#{$ionicons-prefix}rewind-outline:before {
+	content: $ionicon-var-ios-rewind-outline;
+}
+.#{$ionicons-prefix}rose:before {
+	content: $ionicon-var-ios-rose;
+}
+.#{$ionicons-prefix}rose-outline:before {
+	content: $ionicon-var-ios-rose-outline;
+}
+.#{$ionicons-prefix}search:before {
+	content: $ionicon-var-ios-search;
+}
+.#{$ionicons-prefix}search-strong:before {
+	content: $ionicon-var-ios-search-strong;
+}
+.#{$ionicons-prefix}settings:before {
+	content: $ionicon-var-ios-settings;
+}
+.#{$ionicons-prefix}settings-strong:before {
+	content: $ionicon-var-ios-settings-strong;
+}
+.#{$ionicons-prefix}shuffle:before {
+	content: $ionicon-var-ios-shuffle;
+}
+.#{$ionicons-prefix}shuffle-strong:before {
+	content: $ionicon-var-ios-shuffle-strong;
+}
+.#{$ionicons-prefix}skipbackward:before {
+	content: $ionicon-var-ios-skipbackward;
+}
+.#{$ionicons-prefix}skipbackward-outline:before {
+	content: $ionicon-var-ios-skipbackward-outline;
+}
+.#{$ionicons-prefix}skipforward:before {
+	content: $ionicon-var-ios-skipforward;
+}
+.#{$ionicons-prefix}skipforward-outline:before {
+	content: $ionicon-var-ios-skipforward-outline;
+}
+.#{$ionicons-prefix}snowy:before {
+	content: $ionicon-var-ios-snowy;
+}
+.#{$ionicons-prefix}speedometer:before {
+	content: $ionicon-var-ios-speedometer;
+}
+.#{$ionicons-prefix}speedometer-outline:before {
+	content: $ionicon-var-ios-speedometer-outline;
+}
+.#{$ionicons-prefix}star:before {
+	content: $ionicon-var-ios-star;
+}
+.#{$ionicons-prefix}star-half:before {
+	content: $ionicon-var-ios-star-half;
+}
+.#{$ionicons-prefix}star-outline:before {
+	content: $ionicon-var-ios-star-outline;
+}
+.#{$ionicons-prefix}stopwatch:before {
+	content: $ionicon-var-ios-stopwatch;
+}
+.#{$ionicons-prefix}stopwatch-outline:before {
+	content: $ionicon-var-ios-stopwatch-outline;
+}
+.#{$ionicons-prefix}sunny:before {
+	content: $ionicon-var-ios-sunny;
+}
+.#{$ionicons-prefix}sunny-outline:before {
+	content: $ionicon-var-ios-sunny-outline;
+}
+.#{$ionicons-prefix}telephone:before {
+	content: $ionicon-var-ios-telephone;
+}
+.#{$ionicons-prefix}telephone-outline:before {
+	content: $ionicon-var-ios-telephone-outline;
+}
+.#{$ionicons-prefix}tennisball:before {
+	content: $ionicon-var-ios-tennisball;
+}
+.#{$ionicons-prefix}tennisball-outline:before {
+	content: $ionicon-var-ios-tennisball-outline;
+}
+.#{$ionicons-prefix}thunderstorm:before {
+	content: $ionicon-var-ios-thunderstorm;
+}
+.#{$ionicons-prefix}thunderstorm-outline:before {
+	content: $ionicon-var-ios-thunderstorm-outline;
+}
+.#{$ionicons-prefix}time:before {
+	content: $ionicon-var-ios-time;
+}
+.#{$ionicons-prefix}time-outline:before {
+	content: $ionicon-var-ios-time-outline;
+}
+.#{$ionicons-prefix}timer:before {
+	content: $ionicon-var-ios-timer;
+}
+.#{$ionicons-prefix}timer-outline:before {
+	content: $ionicon-var-ios-timer-outline;
+}
+.#{$ionicons-prefix}toggle:before {
+	content: $ionicon-var-ios-toggle;
+}
+.#{$ionicons-prefix}toggle-outline:before {
+	content: $ionicon-var-ios-toggle-outline;
+}
+.#{$ionicons-prefix}trash:before {
+	content: $ionicon-var-ios-trash;
+}
+.#{$ionicons-prefix}trash-outline:before {
+	content: $ionicon-var-ios-trash-outline;
+}
+.#{$ionicons-prefix}undo:before {
+	content: $ionicon-var-ios-undo;
+}
+.#{$ionicons-prefix}undo-outline:before {
+	content: $ionicon-var-ios-undo-outline;
+}
+.#{$ionicons-prefix}unlocked:before {
+	content: $ionicon-var-ios-unlocked;
+}
+.#{$ionicons-prefix}unlocked-outline:before {
+	content: $ionicon-var-ios-unlocked-outline;
+}
+.#{$ionicons-prefix}upload:before {
+	content: $ionicon-var-ios-upload;
+}
+.#{$ionicons-prefix}upload-outline:before {
+	content: $ionicon-var-ios-upload-outline;
+}
+.#{$ionicons-prefix}videocam:before {
+	content: $ionicon-var-ios-videocam;
+}
+.#{$ionicons-prefix}videocam-outline:before {
+	content: $ionicon-var-ios-videocam-outline;
+}
+.#{$ionicons-prefix}volume-high:before {
+	content: $ionicon-var-ios-volume-high;
+}
+.#{$ionicons-prefix}volume-low:before {
+	content: $ionicon-var-ios-volume-low;
+}
+.#{$ionicons-prefix}wineglass:before {
+	content: $ionicon-var-ios-wineglass;
+}
+.#{$ionicons-prefix}wineglass-outline:before {
+	content: $ionicon-var-ios-wineglass-outline;
+}
+.#{$ionicons-prefix}world:before {
+	content: $ionicon-var-ios-world;
+}
+.#{$ionicons-prefix}world-outline:before {
+	content: $ionicon-var-ios-world-outline;
+}
