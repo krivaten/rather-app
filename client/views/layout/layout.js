@@ -1,4 +1,4 @@
-Template.layoutPrimary.events({
+Template.layout.events({
 
 	/**
 	 * Set inputFocus session variable as true on input:focus
@@ -22,7 +22,7 @@ Template.layoutPrimary.events({
 	}
 });
 
-Template.layoutPrimary.helpers({
+Template.layout.helpers({
 
 	/**
 	 * Determine whether or not an input is focused
@@ -33,6 +33,18 @@ Template.layoutPrimary.helpers({
 	 */
 	inputFocus: function () {
 		return Session.get('inputFocus');
+	},
+
+
+	/**
+	 * Determine if drawer is visible
+	 *
+	 * @method drawerVisible
+	 * @return {Boolean} Whether or not menu is visible
+	 * @since v0.1.0
+	 */
+	drawerVisible: function() {
+		return Session.get('drawerVisible');
 	}
 
 });
