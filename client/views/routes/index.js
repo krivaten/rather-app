@@ -85,6 +85,8 @@ Template.index.events({
 		if (!_.isString(username)) errors.push('Please provide a username');
 		if (!_.isString(password)) errors.push('Please provide a password');
 
+		username = _.trim(username.toLowerCase());
+
 		if (Session.get('creatingAccount')) {
 
 			// Make sure email is set
@@ -92,6 +94,8 @@ Template.index.events({
 
 			// If any errors, display them
 			if (!_.isEmpty(errors)) console.log('ERRORS', errors);
+
+			username = _.trim(username.toLowerCase());
 
 			options = {
 				username: username,
