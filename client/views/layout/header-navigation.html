@@ -1,0 +1,9 @@
+<template name="headerNavigation">
+	<nav class="nav nav---header">
+		{{#each navigation}}
+			<a href="{{pathFor path}}">
+				{{title}}
+			</a>
+		{{/each}}
+	</nav>
+</template>
