@@ -19,6 +19,7 @@ App.icons({
   'android_mdpi': 'public/img/icons/android-48x48.png',
   'android_hdpi': 'public/img/icons/android-72x72.png',
   'android_xhdpi': 'public/img/icons/android-96x96.png'
+  //Need xxhdpi and xxxhdpi
 });
 
 App.launchScreens({
@@ -40,6 +41,7 @@ App.launchScreens({
   'android_hdpi_landscape': 'public/img/splash/android-800x480.jpg',
   'android_xhdpi_portrait': 'public/img/splash/android-720x1280.jpg',
   'android_xhdpi_landscape': 'public/img/splash/android-1280x720.jpg'
+  //Need xxhdpi and xxxhdpi
 });
 
 App.setPreference('StatusBarOverlaysWebView', 'false');
