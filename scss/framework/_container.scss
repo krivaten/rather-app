@@ -3,7 +3,7 @@
 		padding-top: $header-height;
 	}
 
-	.nav + & {
+	.header.nav + & {
 		padding-top: ($header-height + $nav-height);
 	}
 }

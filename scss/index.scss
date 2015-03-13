@@ -1,8 +1,8 @@
 /**
  * Add Bower dependencies
  */
-@import 'bourbon/bourbon';
-@import 'neat/neat';
+@import '../private/.bower/bourbon/app/assets/stylesheets/bourbon';
+@import '../private/.bower/neat/app/assets/stylesheets/neat';
 @import '../private/.bower/ionicons/scss/ionicons';
 
 /**
@@ -39,12 +39,11 @@
 @import 'utils/spacing';
 
 /**
- * Temapltes
+ * Templates
  */
 @import 'templates/layouts/header';
-@import 'templates/layouts/header-nav';
 @import 'templates/layouts/layout';
-@import 'templates/layouts/layout-tools';
+@import 'templates/layouts/drawer';
 @import 'templates/routes/index';
 @import 'templates/routes/account/index';
 
