@@ -1,12 +1,14 @@
 /**
  * Form elements
  */
-.input {
+.form__group {
 	position: relative;
+	display: table;
 	border-top: $base-border;
 	padding-left: $spacing-sm;
 	padding-right: $spacing-sm;
 	text-transform: lowercase;
+	width: 100%;
 
 	&:first-of-type {
 		border-top: 0;
@@ -22,30 +24,37 @@
 		line-height: $base-input-height;
 	}
 
-	&.input--group {
-		input {
-			padding-right: $input-group-padding;
+	.form__group__addon {
+		display: table-cell;
+		text-align: center;
+
+		&:first-child {
+			text-align: left;
 		}
-		a {
-			position: absolute;
-			right: 0;
-			top: 0;
+		&:last-child {
+			text-align: right;
 		}
 	}
 
-	&.input--collapsible {
+	.form__group__input  {
+		display: table-cell;
+		width: 100%;
+	}
+
+	.form__group__textarea {
+		padding-top: $spacing-xs;
+		padding-bottom: $spacing-xs;
+	}
+
+	&.form__group--collapsible {
 		@include transition(height 0.2s ease-in-out, opacity 0.2s ease-in-out);
 		@include transform(translateZ(0));
+		display: block;
 		height: $base-input-height;
 		overflow: hidden;
 	}
-	&.input--collapsed {
+	&.form__group--collapsed {
 		height: 0;
 		opacity: 0;
 	}
-}
-
-.textarea {
-	padding-top: $spacing-xs;
-	padding-bottom: $spacing-xs;
 }

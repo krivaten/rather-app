@@ -30,15 +30,16 @@
 			<div class="divider divider--bottom">or</div>
 
 			<form class="form form--sign-in" novalidate>
-				<div class="input">
-					<input type="text" name="username" placeholder="Username" />
+				<div class="form__group">
+					<input type="text" name="username" class="form__group__input" placeholder="Username" />
 				</div>
-				<div class="input input--collapsible {{#unless creatingAccount}}input--collapsed{{/unless}}">
-					<input type="email" name="email" placeholder="Email" disabled="{{#unless creatingAccount}}disabled{{/unless}}"/>
+
+				<div class="form__group form__group--collapsible {{#unless creatingAccount}}form__group--collapsed{{/unless}}">
+					<input type="email" name="email" placeholder="Email" class="form__group__input" disabled="{{#unless creatingAccount}}disabled{{/unless}}"/>
 				</div>
-				<div class="input input--group">
-					<input type="password" name="password" placeholder="Password" data-padding-right="55px" />
-					<a href="#" class="input-something" tabindex="-1">Forgot?</a>
+				<div class="form__group">
+					<input type="password" name="password" class="form__group__input" placeholder="Password" />
+					<a href="#" class="form__group__addon" tabindex="-1">Forgot?</a>
 				</div>
 				<button type="submit" class="btn btn-block btn-primary">HERE</button>
 			</form>

@@ -8,19 +8,21 @@
 		</div>
 
 		<form class="form form--edit-profile" novalidate>
-			<div class="input">
-				<input type="text" name="username" placeholder="Username" />
+			<div class="form__group">
+				<input type="text" name="username" class="form__group__input" placeholder="Username" />
 			</div>
-			<div class="input">
-				<textarea name="bio" placeholder="Bio" class="textarea" rows="4"></textarea>
+			<div class="form__group">
+				<textarea name="bio" class="form__group__textarea" placeholder="Bio" rows="4"></textarea>
 			</div>
-			<div class="input">
-				<input type="email" name="email" placeholder="Email" />
+			<div class="form__group">
+				<input type="email" name="email" class="form__group__input" placeholder="Email" />
 			</div>
 			<button type="submit" class="btn btn-block btn-primary">HERE</button>
 		</form>
-		<p class="text-center">
-			<a href="#" class="sign-out">Logout</a>
+		<p class="text-center padding">
+			<a href="#" class="btn btn-primary btn-block btn--change-password">Change Password</a>
+			<a href="#" class="btn btn-gray btn-block btn--sign-out">Sign Out</a>
+			<a href="#" class="btn btn-secondary btn-block btn--deactivate">Deactivate</a>
 		</p>
 	</div>
 </template>

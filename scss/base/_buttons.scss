@@ -13,8 +13,8 @@ button,
   font-family: $base-font-family;
   text-transform: lowercase;
   font-size: $base-font-size;
-  line-height: 1;
-  padding: 0.5em;
+  line-height: $spacing-md;
+  padding: $spacing-xs;
   text-decoration: none;
   user-select: none;
   vertical-align: middle;
@@ -29,6 +29,10 @@ button,
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+
+  & + & {
+    margin-top: $spacing-xs;
   }
 }
 
@@ -57,6 +61,28 @@ button,
   &:focus {
     background: darken($secondary-color, 10%);
     color: $white;
+  }
+}
+
+.btn-tertiary {
+  background: $tertiary-color;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background: darken($tertiary-color, 10%);
+    color: $white;
+  }
+}
+
+.btn-gray {
+  background: $gray;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    background: darken($gray, 10%);
+    color: $black;
   }
 }
 
