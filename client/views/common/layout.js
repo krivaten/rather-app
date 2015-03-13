@@ -1,9 +1,18 @@
 Template.layout.events({
 
 	/**
+	 * Hide the menu on click
+	 *
+	 * @since v0.1.0
+	 */
+	"click .menu---visible": function(event) {
+		Session.set('menuVisible', false);
+	},
+
+
+	/**
 	 * Set inputFocus session variable as true on input:focus
 	 *
-	 * @return {undefined}
 	 * @since v0.1.0
 	 */
 	'focus input': function() {
@@ -14,7 +23,6 @@ Template.layout.events({
 	/**
 	 * Set inputFocus session variable as false on input:blur
 	 *
-	 * @return {undefined}
 	 * @since v0.1.0
 	 */
 	'blur input': function() {
@@ -23,6 +31,18 @@ Template.layout.events({
 });
 
 Template.layout.helpers({
+
+	/**
+	 * Determine if menu is visible
+	 *
+	 * @method menuVisible
+	 * @return {Boolean} Whether or not menu is visible
+	 * @since v0.1.0
+	 */
+	menuVisible: function() {
+		return Session.get('menuVisible');
+	},
+
 
 	/**
 	 * Determine whether or not an input is focused

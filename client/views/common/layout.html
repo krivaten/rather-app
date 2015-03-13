@@ -1,0 +1,15 @@
+<template name="layout">
+	<div class="layout {{#if inputFocus}}input-focus{{/if}}	{{#if drawerVisible}}drawer---visible{{/if}} {{#if menuVisible}}menu---visible{{/if}} {{platform}}">
+
+		{{> yield region="header"}}
+
+		{{> yield region="nav"}}
+
+		<main class="main">
+			{{> yield}}
+		</main>
+
+		{{> drawer}}
+
+	</div>
+</template>

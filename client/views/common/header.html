@@ -1,0 +1,50 @@
+<template name="header">
+	<header class="header {{#if nav}}nav{{/if}}">
+
+		{{#if btnBack}}
+			<a href="#" class="header___icon header---btn-back">
+				<i class="ion ion-chevron-left"></i>
+			</a>
+		{{else}}
+			<a href="#" class="header___icon header---btn-drawer">
+				<i class="ion ion-android-menu"></i>
+			</a>
+		{{/if}}
+
+		<a href="{{#if btnBack}}{{pathFor btnBack}}{{else}}{{pathFor "index"}}{{/if}}" class="header___logo">
+			{{> svgLogoSm}}
+		</a>
+
+		{{#if currentUser}}
+			<div class="header___nav">
+				<a href="#" class="header___icon header---search">
+					<i class="ion ion-search"></i>
+				</a>
+				<a href="#" class="header___icon header---btn-menu">
+					<i class="ion ion-android-more-vertical"></i>
+				</a>
+			</div>
+
+			<div class="header___menu {{#if menuVisible}}header___menu---visible{{/if}}">
+				<ul class="list">
+					<li class="list___item list___item---link">
+						<a href="{{pathFor "infoFeedback"}}">Feedback</a>
+					</li>
+					<li class="list___item list___item---link">
+						<a href="{{pathFor "infoHelp"}}">Help</a>
+					</li>
+				</ul>
+			</div>
+		{{/if}}
+
+		{{#if nav}}
+			<nav class="nav nav---header">
+				{{#each nav}}
+					<a href="{{pathFor path}}" class="{{#if isActiveTemplate path}}active{{/if}}">
+						{{title}}
+					</a>
+				{{/each}}
+			</nav>
+		{{/if}}
+	</header>
+</template>
