@@ -5,7 +5,7 @@ Template.drawer.events({
 	 *
 	 * @since v0.1.0
 	 */
-	'click .drawer___trigger, click .list___item---link': function(event) {
+	'click .drawer__trigger, click .list__item--link': function(event) {
 		// Close right menu
 		Session.set('drawerVisible', false);
 

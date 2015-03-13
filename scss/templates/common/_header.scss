@@ -15,19 +15,19 @@
 	}
 
 	.svg {
-		&.logo---sm {
+		&.logo--sm {
 			position: relative;
 			height: $header-height - ($spacing-sm * 2);
 			top: $spacing-sm;
 		}
 	}
 
-	.header___logo,
-	.header___nav {
+	.header__logo,
+	.header__nav {
 		height: $header-height;
 	}
 
-	.header___logo {
+	.header__logo {
 		padding: 0 $spacing-sm 0 0;
 		display: inline-block;
 
@@ -36,7 +36,7 @@
 		}
 	}
 
-	.header___icon {
+	.header__icon {
 		font-size: 1.5em;
 		display: block;
 		float: left;
@@ -58,13 +58,13 @@
 		}
 	}
 
-	.header___nav {
+	.header__nav {
 		float: right;
 		line-height: $header-height;
 		position: relative;
 	}
 
-	.header___menu {
+	.header__menu {
 		@include transition(all 0.2s ease-in-out);
 		@include transform(scale3d(0, 0, 1));
 		@include transform-origin(top right);
@@ -75,7 +75,7 @@
 		background: white;
 		width: 300px;
 
-		&.header___menu---visible {
+		&.header__menu--visible {
 			@include transform(scale3d(1, 1, 1));
 		}
 	}

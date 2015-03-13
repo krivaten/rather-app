@@ -24,7 +24,7 @@ Template.index.events({
 	 *
 	 * @since v0.1.0
 	 */
-	'click .sign-in---facebook': function(event, tmpl) {
+	'click .sign-in--facebook': function(event, tmpl) {
 		Meteor.loginWithFacebook({
 			requestPermissions: ['public_profile', 'email']
 		}, function(err) {
@@ -45,7 +45,7 @@ Template.index.events({
 	 *
 	 * @since v0.1.0
 	 */
-	'click .sign-in---twitter': function(event, tmpl) {
+	'click .sign-in--twitter': function(event, tmpl) {
 		Meteor.loginWithTwitter({
 			requestPermissions: ['user']
 		}, function(err) {
@@ -67,7 +67,7 @@ Template.index.events({
 	 * @return {Boolean} Prevent default form behavior
 	 * @since v0.1.0
 	 */
-	'submit .form---sign-in': function(event, tmpl) {
+	'submit .form--sign-in': function(event, tmpl) {
 		var errors, target, username, email, password, options;
 
 		// Prevent default form behavior

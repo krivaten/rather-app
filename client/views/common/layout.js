@@ -5,7 +5,7 @@ Template.layout.events({
 	 *
 	 * @since v0.1.0
 	 */
-	"click .menu---visible": function(event) {
+	"click .menu--visible": function(event) {
 		Session.set('menuVisible', false);
 	},
 

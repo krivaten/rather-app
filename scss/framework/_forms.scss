@@ -22,7 +22,7 @@
 		line-height: $base-input-height;
 	}
 
-	&.input---group {
+	&.input--group {
 		input {
 			padding-right: $input-group-padding;
 		}
@@ -33,13 +33,13 @@
 		}
 	}
 
-	&.input---collapsible {
+	&.input--collapsible {
 		@include transition(height 0.2s ease-in-out, opacity 0.2s ease-in-out);
 		@include transform(translateZ(0));
 		height: $base-input-height;
 		overflow: hidden;
 	}
-	&.input---collapsed {
+	&.input--collapsed {
 		height: 0;
 		opacity: 0;
 	}

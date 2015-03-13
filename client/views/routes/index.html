@@ -1,12 +1,12 @@
 <template name="index">
 	<div class="page index">
 
-		<div class="ratio ratio---16-9 ratio---bg">
-			<div class="ratio___content padding---x">
+		<div class="ratio ratio--16-9 ratio--bg">
+			<div class="ratio__content padding--x">
 				{{> svgLogo}}
 			</div>
 
-			<div class="ratio___footer">
+			<div class="ratio__footer">
 				{{#if creatingAccount}}
 					<h3>create an account</h3>
 				{{else}}
@@ -18,25 +18,25 @@
 		<div class="padding">
 
 			<div class="row">
-				<a href="#" class="sign-in sign-in---facebook">
+				<a href="#" class="sign-in sign-in--facebook">
 					<i class="ion ion-social-facebook"></i>
 				</a>
 
-				<a href="#" class="sign-in sign-in---twitter">
+				<a href="#" class="sign-in sign-in--twitter">
 					<i class="ion ion-social-twitter"></i>
 				</a>
 			</div>
 
-			<div class="divider divider---bottom">or</div>
+			<div class="divider divider--bottom">or</div>
 
-			<form class="form---sign-in" novalidate>
+			<form class="form form--sign-in" novalidate>
 				<div class="input">
 					<input type="text" name="username" placeholder="Username" />
 				</div>
-				<div class="input input---collapsible {{#unless creatingAccount}}input---collapsed{{/unless}}">
+				<div class="input input--collapsible {{#unless creatingAccount}}input--collapsed{{/unless}}">
 					<input type="email" name="email" placeholder="Email" disabled="{{#unless creatingAccount}}disabled{{/unless}}"/>
 				</div>
-				<div class="input input---group">
+				<div class="input input--group">
 					<input type="password" name="password" placeholder="Password" data-padding-right="55px" />
 					<a href="#" class="input-something" tabindex="-1">Forgot?</a>
 				</div>
@@ -45,8 +45,8 @@
 
 		</div>
 
-		<footer class="footer footer---text">
-			<div class="padding---x">
+		<footer class="footer footer--text">
+			<div class="padding--x">
 				<div class="row">
 					<div class="footer-col">
 						<a href="#" class="create-account-toggle text-secondary">

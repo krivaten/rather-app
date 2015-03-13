@@ -1,21 +1,21 @@
 Template.header.events({
-	"click .header___nav-right a": function(event) {
+	"click .header__nav-right a": function(event) {
 		// Close right menu
 		Session.set('menuVisible', false);
 
 		return true;
 	},
 
-	"click .header---btn-back": function(event) {
+	"click .header--btn-back": function(event) {
 		window.history.back();
 	},
 
-	"click .header---btn-drawer": function(event) {
+	"click .header--btn-drawer": function(event) {
 		Session.set('menuVisible', false);
 		Session.set('drawerVisible', true);
 	},
 
-	"click .header---btn-menu": function(event) {
+	"click .header--btn-menu": function(event) {
 		Session.set('drawerVisible', false);
 		Session.set('menuVisible', true);
 	}
