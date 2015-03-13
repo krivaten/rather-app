@@ -34,11 +34,11 @@
 					<input type="text" name="username" placeholder="Username" />
 				</div>
 				<div class="input input---collapsible {{#unless creatingAccount}}input---collapsed{{/unless}}">
-					<input type="email" name="email" placeholder="Email" />
+					<input type="email" name="email" placeholder="Email" disabled="{{#unless creatingAccount}}disabled{{/unless}}"/>
 				</div>
 				<div class="input input---group">
-					<a href="#" class="input-something">Forgot?</a>
 					<input type="password" name="password" placeholder="Password" data-padding-right="55px" />
+					<a href="#" class="input-something" tabindex="-1">Forgot?</a>
 				</div>
 				<button type="submit" class="btn btn-block btn-primary">HERE</button>
 			</form>
@@ -58,7 +58,7 @@
 						</a>
 					</div>
 					<div class="footer-col">
-						<a href="{{pathFor 'info/terms-of-service'}}" class="terms-service text-tertiary">
+						<a href="{{pathFor 'infoTermsOfService'}}" class="terms-service text-tertiary">
 							Terms of service
 						</a>
 					</div>
