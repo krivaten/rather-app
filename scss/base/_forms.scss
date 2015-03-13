@@ -49,10 +49,14 @@ textarea {
 	&:focus {
 		border-color: $action-color;
 	}
+
+	@include placeholder() {
+		text-transform: lowercase;
+	}
 }
 
 textarea {
-	resize: vertical;
+	resize: none;
 }
 
 input[type="search"] {

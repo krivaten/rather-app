@@ -17,12 +17,6 @@
 		padding-right: 0;
 	}
 
-	input {
-		@include placeholder() {
-			text-transform: lowercase;
-		}
-	}
-
 	a {
 		height: $base-input-height;
 		line-height: $base-input-height;
@@ -49,4 +43,9 @@
 		height: 0;
 		opacity: 0;
 	}
+}
+
+.textarea {
+	padding-top: $spacing-xs;
+	padding-bottom: $spacing-xs;
 }
