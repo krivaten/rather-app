@@ -7,6 +7,7 @@ Meteor.startup(function() {
 	Accounts.loginServiceConfiguration.remove({
 		service: 'twitter'
 	});
+
 	Accounts.loginServiceConfiguration.insert({
 		service: 'twitter',
 		consumerKey: 'whsAlCJUIKT6niIeTzDoPv3Gr',
@@ -17,6 +18,7 @@ Meteor.startup(function() {
 	Accounts.loginServiceConfiguration.remove({
 		service: 'facebook'
 	});
+
 	Accounts.loginServiceConfiguration.insert({
 		service: 'facebook',
 		appId: '1558392507753480',
