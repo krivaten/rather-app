@@ -1,7 +1,24 @@
 <template name="accountIndex">
-	<div class="page account index padding">
-		{{> svgLogo}}
+	<div class="page account index">
 
+		<div class="ratio ratio---16-9 ratio---bg">
+			<div class="ratio___content padding---x">
+				Profile stuff here
+			</div>
+		</div>
+
+		<form class="form form---edit-profile" novalidate>
+			<div class="input">
+				<input type="text" name="username" placeholder="Username" />
+			</div>
+			<div class="input">
+				<textarea name="bio" placeholder="Bio" class="textarea" rows="4"></textarea>
+			</div>
+			<div class="input">
+				<input type="email" name="email" placeholder="Email" />
+			</div>
+			<button type="submit" class="btn btn-block btn-primary">HERE</button>
+		</form>
 		<p class="text-center">
 			<a href="#" class="sign-out">Logout</a>
 		</p>
