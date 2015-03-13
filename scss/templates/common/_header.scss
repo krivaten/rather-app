@@ -93,6 +93,7 @@
 
 			&.active {
 				color: $secondary-color;
+				border-bottom: $spacing-xxs solid $secondary-color;
 			}
 
 			&:active {
