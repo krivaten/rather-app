@@ -8,6 +8,11 @@
 	height: $header-height;
 	width: 100%;
 	z-index: 200;
+	border-bottom: $base-border;
+
+	&.nav {
+		height: $header-height + $nav-height;
+	}
 
 	.svg {
 		&.logo---sm {
@@ -37,12 +42,19 @@
 		float: left;
 		height: $header-height;
 		line-height: $header-height;
-		padding: 0 $spacing-sm;
 		color: $tertiary-color;
+		padding: 0;
+		width: $header-height;
+		text-align: center;
 
 		&:active {
 			background: rgba($black, 0.1);
 			color: darken($tertiary-color, 10%);
+		}
+
+		&:last-child {
+			width: auto;
+			padding: 0 $spacing-sm;
 		}
 	}
 
@@ -52,7 +64,7 @@
 		position: relative;
 	}
 
-	.header___nav-right {
+	.header___menu {
 		@include transition(all 0.2s ease-in-out);
 		@include transform(scale3d(0, 0, 1));
 		@include transform-origin(top right);
@@ -63,8 +75,31 @@
 		background: white;
 		width: 300px;
 
-		&.header___nav-right---visible {
+		&.header___menu---visible {
 			@include transform(scale3d(1, 1, 1));
 		}
 	}
+
+	.nav {
+		height: $nav-height;
+
+		a {
+			@include span-columns(4, "block-collapse");
+			text-align: center;
+			height: $nav-height;
+			line-height: $nav-height;
+			color: $tertiary-color;
+			text-transform: lowercase;
+
+			&.active {
+				color: $secondary-color;
+			}
+
+			&:active {
+				background: rgba($black, 0.1);
+			}
+		}
+
+	}
+
 }
