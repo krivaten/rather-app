@@ -8,7 +8,7 @@ Template.accountIndex.events({
 	 *
 	 * @since v0.1.0
 	 */
-	'click .sign-out': function(e, tmpl) {
+	'click [data-trigger="sign-out"]': function(e, tmpl) {
 		Meteor.logout(function(err) {
 			if (err) {
 				// Error handlinlg
