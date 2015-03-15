@@ -5,43 +5,45 @@
 			<div class="ratio__content padding--x">
 				{{> svgLogo}}
 			</div>
-
-			<div class="ratio__footer">
-				{{#if creatingAccount}}
-					<h3>create an account</h3>
-				{{else}}
-					<h3>sign in</h3>
-				{{/if}}
-			</div>
 		</div>
 
 		<div class="padding">
 
 			<div class="row">
-				<a href="#" class="sign-in sign-in--facebook">
-					<i class="ion ion-social-facebook"></i>
-				</a>
-
-				<a href="#" class="sign-in sign-in--twitter">
-					<i class="ion ion-social-twitter"></i>
-				</a>
+				<div class="sign-in__col">
+					<a href="#" class="btn btn-block btn--facebook" data-trigger="facebook">
+						<i class="ion ion-social-facebook"></i>
+					</a>
+				</div>
+				<div class="sign-in__col">
+					<a href="#" class="btn btn-block btn--twitter" data-trigger="twitter">
+						<i class="ion ion-social-twitter"></i>
+					</a>
+				</div>
 			</div>
 
-			<div class="divider divider--bottom">or</div>
+			<div class="divider divider--bottom"><span>or</span></div>
 
-			<form class="form form--sign-in" novalidate>
-				<div class="form__group">
-					<input type="text" name="username" class="form__group__input" placeholder="Username" />
+			<form class="form" novalidate>
+
+				<div class="form__group" data-disabled="{{usernameDisabled}}">
+					<input type="text" name="username" placeholder="Username" class="form__group__input" disabled="{{usernameDisabled}}"/>
 				</div>
 
-				<div class="form__group form__group--collapsible {{#unless creatingAccount}}form__group--collapsed{{/unless}}">
-					<input type="email" name="email" placeholder="Email" class="form__group__input" disabled="{{#unless creatingAccount}}disabled{{/unless}}"/>
+				<!-- Register and forgot password-->
+				<div class="form__group" data-disabled="{{emailDisabled}}">
+					<input type="email" name="email" placeholder="Email" class="form__group__input" disabled="{{emailDisabled}}"/>
 				</div>
-				<div class="form__group">
-					<input type="password" name="password" class="form__group__input" placeholder="Password" />
-					<a href="#" class="form__group__addon" tabindex="-1">Forgot?</a>
+				<!-- Register and Sign in -->
+				<div class="form__group" data-disabled="{{passwordDisabled}}">
+					<input type="password" name="password" placeholder="Password" class="form__group__input" disabled="{{passwordDisabled}}"/>
 				</div>
-				<button type="submit" class="btn btn-block btn-primary">HERE</button>
+
+				<div class="padding--y">
+					<button type="submit" class="btn btn-block btn-primary">
+						{{submitButtonString}}
+					</button>
+				</div>
 			</form>
 
 		</div>
@@ -50,8 +52,8 @@
 			<div class="padding--x">
 				<div class="row">
 					<div class="footer-col">
-						<a href="#" class="create-account-toggle text-secondary">
-							{{#if creatingAccount}}
+						<a href="#" data-trigger="sign-up">
+							{{#if signUp}}
 								Nevermind, Sign In
 							{{else}}
 								Create an account
@@ -59,9 +61,19 @@
 						</a>
 					</div>
 					<div class="footer-col">
-						<a href="{{pathFor 'infoTermsOfService'}}" class="terms-service text-tertiary">
-							Terms of service
-						</a>
+						{{#if signUp}}
+							<a href="{{pathFor 'infoTermsOfService'}}" class="text-tertiary">
+								Terms of Service
+							</a>
+						{{else}}
+							<a href="#" class="text-secondary" data-trigger="forgot-password">
+								{{#if forgotPassword}}
+									Nevermind, Sign In
+								{{else}}
+									Forgot password
+								{{/if}}
+							</a>
+						{{/if}}
 					</div>
 				</div>
 			</div>
