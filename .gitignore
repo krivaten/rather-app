@@ -3,6 +3,6 @@
 .meteor/meteorite
 
 # Hide bower components
-private/.bower
+public/components
 
 .DS_Store
