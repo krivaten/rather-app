@@ -5,22 +5,29 @@
 	position: relative;
 	text-align: center;
 	z-index: 5;
+	line-height: $spacing-md;
+	z-index: 20;
 
-	&:before, &:after {
+	span {
+		position: relative;
+		background: $base-background-color;
+		display: inline-block;
+		width: $spacing-md;
+		height: $spacing-md;
+		border-radius: 50%;
+		z-index: 5;
+	}
+
+	&:before {
 		border-top: $base-border;
 		content: '';
 		position: absolute;
 		top: 50%;
-		width: 45%
-	}
-	&:before {
 		left: 0;
-	}
-	&:after {
-		right: 0;
+		width: 100%
 	}
 
 	&.divider--bottom {
-		margin-bottom: -12px;
+		margin-bottom: -($spacing-md / 2);
 	}
 }

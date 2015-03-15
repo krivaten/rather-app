@@ -1,88 +1,118 @@
 #{$all-button-inputs},
 button,
 .btn {
-  @include transition(all 0.2s ease-in-out);
-  @include appearance(none);
-  -webkit-font-smoothing: antialiased;
-  background-color: transparent;
-  border-radius: $base-border-radius;
-  border: none;
-  color: $primary-color;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $base-font-family;
-  text-transform: lowercase;
-  font-size: $base-font-size;
-  line-height: $spacing-md;
-  padding: $spacing-xs;
-  text-decoration: none;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  outline: none;
+	@include transition(all 0.2s ease-in-out);
+	@include appearance(none);
+	-webkit-font-smoothing: antialiased;
+	background-color: transparent;
+	border-radius: $base-border-radius;
+	border: none;
+	color: $primary-color;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $base-font-family;
+	text-transform: lowercase;
+	font-size: $base-font-size * 1.5;
+	line-height: $spacing-md;
+	padding: ($spacing-xs * 1.5);
+	text-decoration: none;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	outline: none;
 
-  &:hover,
-  &:focus {
-    color: darken($primary-color, 10%);
-  }
+	&:hover,
+	&:focus {
+		color: darken($primary-color, 10%);
+	}
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
 
-  & + & {
-    margin-top: $spacing-xs;
-  }
+	& + & {
+		margin-top: $spacing-xs;
+	}
 }
 
 .btn-block {
-  width: 100%;
-  display: block;
-  text-align: center;
+	width: 100%;
+	display: block;
+	text-align: center;
 }
 
 .btn-primary {
-  background: $primary-color;
-  color: $white;
+	background: $primary-color;
+	color: $white;
 
-  &:hover,
-  &:focus {
-    background: darken($primary-color, 10%);
-    color: $white;
-  }
+	&:hover,
+	&:focus {
+		background: darken($primary-color, 10%);
+		color: $white;
+	}
 }
 
 .btn-secondary {
-  background: $secondary-color;
-  color: $white;
+	background: $secondary-color;
+	color: $white;
 
-  &:hover,
-  &:focus {
-    background: darken($secondary-color, 10%);
-    color: $white;
-  }
+	&:hover,
+	&:focus {
+		background: darken($secondary-color, 10%);
+		color: $white;
+	}
 }
 
 .btn-tertiary {
-  background: $tertiary-color;
-  color: $white;
+	background: $tertiary-color;
+	color: $white;
 
-  &:hover,
-  &:focus {
-    background: darken($tertiary-color, 10%);
-    color: $white;
-  }
+	&:hover,
+	&:focus {
+		background: darken($tertiary-color, 10%);
+		color: $white;
+	}
+}
+
+.btn--facebook {
+	background: $facebook-color;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background: darken($facebook-color, 10%);
+		color: $white;
+	}
+}
+
+.btn--twitter, .btn--facebook {
+	font-size: 2em;
+	padding: $spacing-xs;
+
+	i:before {
+		line-height: $spacing-md;
+	}
+}
+.btn--twitter {
+	background: $twitter-color;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background: darken($twitter-color, 10%);
+		color: $white;
+	}
 }
 
 .btn-gray {
-  background: $gray;
-  color: $black;
+	background: $gray;
+	color: $black;
 
-  &:hover,
-  &:focus {
-    background: darken($gray, 10%);
-    color: $black;
-  }
+	&:hover,
+	&:focus {
+		background: darken($gray, 10%);
+		color: $black;
+	}
 }
 

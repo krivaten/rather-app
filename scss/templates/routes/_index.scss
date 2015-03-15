@@ -2,25 +2,20 @@
  * Index styles
  */
 .page.index {
-
-	.sign-in {
+	.sign-in__col {
 		@include span-columns(6);
-		color: $white;
-		font-size: 2.5em;
-		text-align: center;
-
-		&.sign-in--facebook {
-			background: $facebook-color;
-		}
-
-		&.sign-in--twitter {
-			background: $twitter-color;
-		}
 	}
 
-	.form--sign-in {
-		button {
-			display: none;
+	.form__group {
+		@include transition(height 0.2s ease-in-out, opacity 0.2s ease-in-out);
+		@include transform(translateZ(0));
+		display: block;
+		height: $base-input-height;
+		overflow: hidden;
+
+		&[data-disabled="true"] {
+			height: 0;
+			opacity: 0;
 		}
 	}
 }

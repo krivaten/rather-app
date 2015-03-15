@@ -1,9 +1,9 @@
 /**
  * Add Bower dependencies
  */
-@import '../private/.bower/bourbon/app/assets/stylesheets/bourbon';
-@import '../private/.bower/neat/app/assets/stylesheets/neat';
-@import '../private/.bower/ionicons/scss/ionicons';
+@import '../public/components/bourbon/app/assets/stylesheets/bourbon';
+@import '../public/components/neat/app/assets/stylesheets/neat';
+@import '../public/components/ionicons/scss/ionicons';
 
 /**
  * Import variables
@@ -37,6 +37,7 @@
 @import 'utils/ratio';
 @import 'utils/typography';
 @import 'utils/spacing';
+@import 'utils/toastr';
 
 /**
  * Templates
