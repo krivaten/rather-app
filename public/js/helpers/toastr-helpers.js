@@ -72,6 +72,14 @@
  			title: 'Username',
  			text: 'Must not be blank'
  		},
+ 		name: {
+ 			title: 'Name',
+ 			text: 'Must not be blank',
+ 		},
+ 		bio: {
+ 			title: 'Bio',
+ 			text: 'Must not be blank'
+ 		},
  		email: {
  			title: 'Email',
  			text: 'Must not be blank'
