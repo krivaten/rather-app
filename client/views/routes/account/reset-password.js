@@ -43,6 +43,9 @@ Template.accountResetPassword.events({
 			} else {
 				toastr["error"]("Yay!");
 
+				// Null out resetToken
+				Session.set('resetToken', null);
+
 				// Redirect to index
 				Router.go('index');
 			}
