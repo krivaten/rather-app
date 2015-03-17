@@ -11,10 +11,15 @@
 			</a>
 		{{/if}}
 
-		<a href="{{#if btnBack}}{{pathFor btnBack}}{{else}}{{pathFor "index"}}{{/if}}" class="header__logo">
-			{{> svgLogoSm}}
-		</a>
-
+		{{#if title}}
+			<h3 class="header__title">
+				{{title}}
+			</h3>
+		{{else}}
+			<a href="{{pathFor 'index'}}" class="header__logo">
+				{{> svgLogoSm}}
+			</a>
+		{{/if}}
 		{{#if currentUser}}
 			<div class="header__nav">
 				<a href="#" class="header__icon header--search">
