@@ -23,6 +23,7 @@
 	}
 
 	.header__logo,
+	.header__title,
 	.header__nav {
 		height: $header-height;
 	}
@@ -34,6 +35,13 @@
 		&:active {
 			background: rgba($black, 0.1);
 		}
+	}
+
+	.header__title {
+		line-height: $header-height;
+		margin: 0;
+		display: inline-block;
+		font-size: 1.75em;
 	}
 
 	.header__icon {
