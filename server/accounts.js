@@ -17,12 +17,18 @@ Accounts.onCreateUser(function(options, user) {
 		twitter = services.twitter;
 		facebook = services.facebook;
 
+		user.profile = {
+			name: '',
+			bio: ''
+		};
+
 		// If logging in with Twitter
 		if (_.isObject(twitter)) {
 
 			// Build user profile
 			user.profile = {
 				name: twitter.screenName,
+				bio: '',
 				username: twitter.screenName,
 				avatar: twitter.profile_image_url
 			}
@@ -35,6 +41,7 @@ Accounts.onCreateUser(function(options, user) {
 			user.profile = {
 				email: facebook.email,
 				name: facebook.name,
+				bio: '',
 				gender: facebook.gender,
 				avatar: 'http://graph.facebook.com/' + facebook.id + '/picture?type=large'
 			};
