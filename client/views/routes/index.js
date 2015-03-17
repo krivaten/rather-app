@@ -168,9 +168,9 @@ Template.index.events({
 		pageMode = Session.get('pageMode');
 		errors = [];
 		target = event.target;
-		username = !_.isUndefined(target.username) ? target.username.value : null;
-		email = !_.isUndefined(target.email) ? target.email.value : null;
-		password = !_.isUndefined(target.password) ? target.password.value : null;
+		username = target.username.value;
+		email = target.email.value;
+		password = target.password.value;
 
 		// Trim and convert username and email to lowercase
 		username = _.trim(username.toLowerCase());
@@ -179,15 +179,15 @@ Template.index.events({
 		switch (pageMode) {
 
 			case ('sign-up'):
+
 				// Make sure required fields are set
-				if (!_.isString(password)) errors.push('Please provide a password');
-				if (!_.isString(email)) errors.push('Please provide a email');
+				if (_.isEmpty(password)) errors.push(messages.fields.password);
+				if (_.isEmpty(email)) errors.push(messages.fields.email);
 
 				// If any errors, display them
-				if (!_.isEmpty(errors)) console.log('ERRORS', errors);
+				if (!_.isEmpty(errors)) return messages.general.listErrors(errors);
 
-				username = _.trim(username.toLowerCase());
-
+				// Build options
 				options = {
 					username: username,
 					email: email,
@@ -209,8 +209,12 @@ Template.index.events({
 
 			case ('forgot-password'):
 				// Make sure required fields are set
-				if (!_.isString(email)) errors.push('Please provide a email');
+				if (_.isEmpty(email)) errors.push(messages.fields.email);
 
+				// If any errors, display them
+				if (!_.isEmpty(errors)) return messages.general.listErrors(errors);
+
+				// Build options
 				options = {
 					email: email
 				};
@@ -220,7 +224,10 @@ Template.index.events({
 						toastr["error"](error.reason);
 						return false;
 					}
-					// $('input[name="email"').value('');
+
+					// Reset the form
+					event.target.reset();
+
 					toastr["success"]("Please check your email to reset your password");
 				});
 
@@ -228,11 +235,11 @@ Template.index.events({
 
 			default:
 				// Make sure required fields are set
-				if (!_.isString(username)) errors.push('Please provide a username');
-				if (!_.isString(password)) errors.push('Please provide a password');
+				if (_.isEmpty(username)) errors.push(messages.fields.username);
+				if (_.isEmpty(password)) errors.push(messages.fields.password);
 
 				// If any errors, display them
-				if (!_.isEmpty(errors)) console.log('ERRORS', errors);
+				if (!_.isEmpty(errors)) return messages.general.listErrors(errors);
 
 				Meteor.loginWithPassword(username, password, function(error) {
 					if (error) {
