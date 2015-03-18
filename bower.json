@@ -24,6 +24,6 @@
     "velocity": "~1.2.2",
     "bourbon": "~4.2.1",
     "neat": "~1.7.1",
-    "toastr": "~2.1.1"
+    "toastr": "git@github.com:krivaten/toastr.git"
   }
 }
