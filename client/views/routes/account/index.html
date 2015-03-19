@@ -8,12 +8,9 @@
 		</div>
 		<form class="form form--edit-profile" novalidate>
 			<div class="form__group">
-				<input type="text" name="username" class="form__group__input" placeholder="Username" value="{{username}}"/>
-			</div>
-			<div class="form__group">
 				<input type="text" name="name" class="form__group__input" placeholder="Name" value="{{name}}"/>
 			</div>
-			<div class="form__group">
+			<div class="form__group form__group--textarea">
 				<textarea name="bio" class="form__group__textarea" placeholder="Bio" rows="4">{{bio}}</textarea>
 			</div>
 			<div class="form__group">
@@ -26,10 +23,14 @@
 				</button>
 			</div>
 		</form>
-		<p class="text-center padding">
-			<a href="#" class="btn btn-primary btn-block"  data-trigger="change-password">Change Password</a>
-			<a href="#" class="btn btn-gray btn-block" data-trigger="sign-out">Sign Out</a>
-			<a href="#" class="btn btn-secondary btn-block"  data-trigger="deactivate-account">Deactivate</a>
-		</p>
+
+		{{> componentToggleBlock trigger="account-index-details"}}
+		<div class="toggle-block__content">
+			<p class="text-center padding">
+				<a href="#" class="btn btn-primary btn-block"  data-trigger="change-password">Change Password</a>
+				<a href="#" class="btn btn-gray btn-block" data-trigger="sign-out">Sign Out</a>
+				<a href="#" class="btn btn-secondary btn-block"  data-trigger="deactivate-account">Deactivate</a>
+			</p>
+		</div>
 	</div>
 </template>
