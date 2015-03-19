@@ -11,19 +11,27 @@
 	"positionClass": "toast-top-right",
 	"preventDuplicates": true,
 	"onclick": null,
-	"showMethod": "show",
-	"hideMethod": "hide"
+	"showMethod": 'fadeIn',
+	"hideMethod": 'fadeOut',
+	"showDuration": 300,
+	"hideDuration": 300
 };
 
  alerts = {
  	error: function(message) {
  		toastr["error"](message, 'Error');
+ 	},
+ 	success: function(message) {
+ 		toastr['success'](message);
  	}
  }
 
  messages = {
- 	general: {
- 		listErrors: function(errors) {
+ 	errors: {
+ 		general: function(error) {
+ 			alerts.error(error.reason || error.error || 'Something went wrong');
+ 		},
+ 		list: function(errors) {
  			var message;
  			if (!_.isArray(errors) || _.isEmpty(errors)) {
  				errors = [];
@@ -64,14 +72,16 @@
  		},
  		resetPassword: function() {
  			alerts.error('Please check your email to reset your password.')
+ 		},
+ 		updatedEmail: function() {
+ 			alerts.success('Email successfully updated.');
+ 		},
+ 		updatedProfile: function() {
+ 			alerts.success('Profile successfully updated');
  		}
  	},
 
  	fields: {
- 		username: {
- 			title: 'Username',
- 			text: 'Must not be blank'
- 		},
  		name: {
  			title: 'Name',
  			text: 'Must not be blank',
@@ -81,8 +91,18 @@
  			text: 'Must not be blank'
  		},
  		email: {
- 			title: 'Email',
- 			text: 'Must not be blank'
+ 			invalid: {
+ 				title: 'Email',
+ 				text: 'Must be valid',
+ 			},
+ 			empty: {
+ 				title: 'Email',
+ 				text: 'Must not be blank'
+ 			},
+ 			duplicate: {
+ 				title: 'Email',
+ 				text: 'Registered to another user'
+ 			}
  		},
  		password: {
  			title: 'Password',
