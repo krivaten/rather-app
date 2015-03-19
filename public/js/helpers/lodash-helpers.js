@@ -15,4 +15,10 @@ lodashHelpers.isPresent = function(value) {
 	return (!_.isUndefined(value) && !_.isNull(value));
 };
 
+lodashHelpers.isEmail = function(email) {
+	var emailPattern = /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+
+	return (_.isPresent(email) && emailPattern.test(email));
+}
+
 _.mixin(lodashHelpers);
