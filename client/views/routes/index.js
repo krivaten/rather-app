@@ -62,16 +62,14 @@ Template.index.helpers({
 
 
 	/**
-	 * Is the username field disabled
+	 * Is the name field disabled
 	 *
-	 * @method usernameDisabled
-	 * @return {Boolean} Whether or not the username field is disabled
+	 * @method nameDisabled
+	 * @return {Boolean} Whether or not the name field is disabled
 	 * @since v0.1.0
 	 */
-	usernameDisabled: function() {
-		var pageMode = Session.get('pageMode');
-
-		return (pageMode === 'forgot-password');
+	nameDisabled: function() {
+		return !Session.equals('pageMode', 'sign-up');
 	},
 
 
@@ -83,9 +81,7 @@ Template.index.helpers({
 	 * @since v0.1.0
 	 */
 	emailDisabled: function() {
-		var pageMode = Session.get('pageMode');
-
-		return !(pageMode === 'forgot-password' || pageMode === 'sign-up');
+		return false;
 	},
 
 
@@ -97,9 +93,7 @@ Template.index.helpers({
 	 * @since v0.1.0
 	 */
 	passwordDisabled: function() {
-		var pageMode = Session.get('pageMode');
-
-		return (pageMode === 'forgot-password');
+		return Session.equals('pageMode', 'forgot-password');
 	}
 
 });
@@ -136,7 +130,6 @@ Template.index.events({
 	 * @since v0.1.0
 	 */
 	'click [data-trigger="twitter"]': function(event, template) {
-		console.log('here')
 		Meteor.loginWithTwitter({
 			requestPermissions: ['user']
 		}, function(err) {
@@ -159,7 +152,7 @@ Template.index.events({
 	 * @since v0.1.0
 	 */
 	'submit form': function(event, template) {
-		var pageMode, errors, target, username, email, password, options;
+		var pageMode, errors, target, name, email, password, options;
 
 		// Prevent default form behavior
 		event.preventDefault();
@@ -168,13 +161,17 @@ Template.index.events({
 		pageMode = Session.get('pageMode');
 		errors = [];
 		target = event.target;
-		username = target.username.value;
+		name = target.name.value;
 		email = target.email.value;
 		password = target.password.value;
 
-		// Trim and convert username and email to lowercase
-		username = _.trim(username.toLowerCase());
+		// Trim and convert name and email to lowercase
+		name = _.trim(name);
 		email = _.trim(email.toLowerCase());
+
+		// Make sure required fields are set
+		if (_.isEmpty(email)) errors.push(messages.fields.email);
+		if (!_.isEmail(email)) errors.push(messages.fields.email.invalid);
 
 		switch (pageMode) {
 
@@ -182,15 +179,18 @@ Template.index.events({
 
 				// Make sure required fields are set
 				if (_.isEmpty(password)) errors.push(messages.fields.password);
-				if (_.isEmpty(email)) errors.push(messages.fields.email);
+				if (_.isEmpty(name)) errors.push(messages.fields.name);
 
 				// If any errors, display them
-				if (!_.isEmpty(errors)) return messages.general.listErrors(errors);
+				if (!_.isEmpty(errors)) return messages.errors.list(errors);
 
 				// Build options
 				options = {
-					username: username,
 					email: email,
+					profile: {
+						name: name,
+						bio: 'I\'m new here'
+					},
 					password: password
 				}
 
@@ -208,11 +208,9 @@ Template.index.events({
 				break;
 
 			case ('forgot-password'):
-				// Make sure required fields are set
-				if (_.isEmpty(email)) errors.push(messages.fields.email);
 
 				// If any errors, display them
-				if (!_.isEmpty(errors)) return messages.general.listErrors(errors);
+				if (!_.isEmpty(errors)) return messages.errors.list(errors);
 
 				// Build options
 				options = {
@@ -235,13 +233,12 @@ Template.index.events({
 
 			default:
 				// Make sure required fields are set
-				if (_.isEmpty(username)) errors.push(messages.fields.username);
 				if (_.isEmpty(password)) errors.push(messages.fields.password);
 
 				// If any errors, display them
-				if (!_.isEmpty(errors)) return messages.general.listErrors(errors);
+				if (!_.isEmpty(errors)) return messages.errors.list(errors);
 
-				Meteor.loginWithPassword(username, password, function(error) {
+				Meteor.loginWithPassword(email, password, function(error) {
 					if (error) {
 						toastr["error"](error.reason);
 						return false;

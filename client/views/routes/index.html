@@ -26,16 +26,16 @@
 
 			<form class="form" novalidate>
 
-				<div class="form__group" data-disabled="{{usernameDisabled}}">
-					<input type="text" name="username" placeholder="Username" class="form__group__input" disabled="{{usernameDisabled}}"/>
+				<div class="form__group form__group--collapsible" data-disabled="{{nameDisabled}}">
+					<input type="text" name="name" placeholder="Name" class="form__group__input" disabled="{{nameDisabled}}"/>
 				</div>
 
 				<!-- Register and forgot password-->
-				<div class="form__group" data-disabled="{{emailDisabled}}">
+				<div class="form__group form__group--collapsible" data-disabled="{{emailDisabled}}">
 					<input type="email" name="email" placeholder="Email" class="form__group__input" disabled="{{emailDisabled}}"/>
 				</div>
 				<!-- Register and Sign in -->
-				<div class="form__group" data-disabled="{{passwordDisabled}}">
+				<div class="form__group form__group--collapsible" data-disabled="{{passwordDisabled}}">
 					<input type="password" name="password" placeholder="Password" class="form__group__input" disabled="{{passwordDisabled}}"/>
 				</div>
 
