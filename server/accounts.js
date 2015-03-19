@@ -7,8 +7,10 @@
  * @return {Object} Modified user object
  * @since v0.1.0
  */
-Accounts.onCreateUser(function(options, user) {
+Accounts.onCreateUser(function(options, user, profile) {
 	var services = user.services;
+
+	user.profile = options.profile;
 
 	// If services is populated
 	if (_.isObject(services)) {
@@ -16,11 +18,6 @@ Accounts.onCreateUser(function(options, user) {
 
 		twitter = services.twitter;
 		facebook = services.facebook;
-
-		user.profile = {
-			name: '',
-			bio: ''
-		};
 
 		// If logging in with Twitter
 		if (_.isObject(twitter)) {
