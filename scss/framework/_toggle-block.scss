@@ -1,0 +1,34 @@
+/**
+ * Toggle block styles
+ */
+.toggle-block {
+	position: relative;
+
+	height: $base-height;
+	overflow: hidden;
+
+	&.active {
+		.toggle-block__btn {
+			@include transform(rotate(180deg));
+		}
+	}
+
+	&:before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		border-top: $base-border;
+		top: 50%;
+		left: -$base-height;
+	}
+
+	.toggle-block__btn {
+		@include transition(all 0.2s ease-in-out);
+		position: absolute;
+		right: 0;
+		padding: 0;
+		width: $base-height;
+		height: $base-height;
+		line-height: $base-height;
+	}
+}

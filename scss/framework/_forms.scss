@@ -52,9 +52,10 @@
 		display: block;
 		height: $base-input-height;
 		overflow: hidden;
-	}
-	&.form__group--collapsed {
-		height: 0;
-		opacity: 0;
+
+		&[data-disabled="true"] {
+			height: 0;
+			opacity: 0;
+		}
 	}
 }
