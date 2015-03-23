@@ -77,7 +77,16 @@
  			alerts.success('Email successfully updated.');
  		},
  		updatedProfile: function() {
- 			alerts.success('Profile successfully updated');
+ 			alerts.success('Profile successfully updated.');
+ 		},
+ 		updatedPassword: function() {
+ 			alerts.success('Password successfully updated.');
+ 		},
+ 		deactivatedAccount: function() {
+ 			alerts.success('Your account has been deactivated.')
+ 		},
+ 		signedOut: function() {
+ 			alerts.success('You have been successfully signed out');
  		}
  	},
 
@@ -107,6 +116,18 @@
  		password: {
  			title: 'Password',
  			text: 'Must not be blank'
+ 		},
+ 		currentPassword: {
+ 			title: 'Current Password',
+ 			text: 'Must not be blank'
+ 		},
+ 		newPassword: {
+ 			title: 'New Password',
+ 			text: 'Must not be blank'
+ 		},
+ 		identicalPassword: {
+ 			title: 'Passwords',
+ 			text: 'Must not be identical'
  		}
  	}
  }
