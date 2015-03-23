@@ -3,6 +3,20 @@
  */
 Meteor.methods({
 
+	deactivateUser: function() {
+
+		// Make sure the user is logged in
+		if (!Meteor.userId()) {
+			throw new Meteor.Error('Not logged in');
+		}
+
+		Meteor.users.update({_id: Meteor.userId()}, {
+			$set: {
+				"settings.status": 0
+			}
+		});
+	},
+
 	updateUser: function(options) {
 
 		// Make sure the user is logged in
