@@ -24,13 +24,16 @@
 			</div>
 		</form>
 
-		{{> componentToggleBlock trigger="account-index-details"}}
-		<div class="toggle-block__content">
-			<p class="text-center padding">
-				<a href="#" class="btn btn-primary btn-block"  data-trigger="change-password">Change Password</a>
-				<a href="#" class="btn btn-gray btn-block" data-trigger="sign-out">Sign Out</a>
-				<a href="#" class="btn btn-secondary btn-block"  data-trigger="deactivate-account">Deactivate</a>
-			</p>
+		{{> componentToggleBlock trigger="account-index-details" name="advanced options"}}
+
+		<div class="toggle-block__container">
+			<div class="toggle-block__content">
+				<p class="text-center padding">
+					<a href="{{pathFor 'accountChangePassword'}}" class="btn btn-primary btn-block"  data-trigger="change-password">Change Password</a>
+					<a href="#" class="btn btn-gray btn-block" data-trigger="sign-out">Sign Out</a>
+					<a href="#" class="btn btn-secondary btn-block"  data-trigger="deactivate-account">Deactivate</a>
+				</p>
+			</div>
 		</div>
 	</div>
 </template>

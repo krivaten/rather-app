@@ -1,6 +1,18 @@
 /**
  * Account Index
  */
+
+var userSignOut = function(showAlert) {
+	Meteor.logout(function(error) {
+		if (error) return messages.errors.general(error);
+
+		if (showAlert) messages.account.signedOut();
+
+		// Redirect to index
+		Router.go('index');
+	});
+}
+
 Template.accountIndex.helpers({
 
 	/**
@@ -51,6 +63,8 @@ Template.accountIndex.helpers({
 	}
 
 });
+
+
 Template.accountIndex.events({
 
 
@@ -130,14 +144,30 @@ Template.accountIndex.events({
 	 * @since v0.1.0
 	 */
 	'click [data-trigger="sign-out"]': function(event, template) {
-		Meteor.logout(function(err) {
-			if (err) {
-				// Error handlinlg
-			} else {
 
-				// Redirect to index
-				Router.go('index');
-			}
-		});
+		var confirm = window.confirm('Are you sure you would like to sign out?');
+
+		if (confirm) userSignOut(true);
+	},
+
+
+	/**
+	 * Deactivate account
+	 *
+	 * @since v0.1.0
+	 */
+	'click [data-trigger="deactivate-account"]': function(event, template) {
+
+		var confirm = window.confirm('Are you sure you would like to deactivate your account?');
+
+		if (confirm) {
+			Meteor.call('deactivateUser', function(error) {
+				if (error) return messages.errors.general(error);
+
+				messages.account.deactivatedAccount();
+
+				userSignOut();
+			});
+		}
 	}
 });
