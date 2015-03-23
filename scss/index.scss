@@ -29,8 +29,13 @@
 @import 'framework/alerts';
 @import 'framework/forms';
 @import 'framework/list-groups';
-@import 'framework/toggle-block';
 @import 'framework/typography';
+
+
+/**
+ * Components
+ */
+@import 'components/toggle-block';
 
 /**
  * Utilities
