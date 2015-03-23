@@ -9,7 +9,7 @@ iron:router
 mdg:camera
 mdg:geolocation
 
-
 npm-container
 jquery
 email
+meteorhacks:kadira
