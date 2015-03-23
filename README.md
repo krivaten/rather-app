@@ -1,27 +1,23 @@
-### Install Meteor
-Install the newest version of Meteor with one command on OS X or Linux. Open your terminal and type: `curl https://install.meteor.com/ | sh`
+### Dependencies
+
+This project has a few dependencies to get you up and running. Make sure the following things are installed on your system to ensure things are running properly:
+
+- [Node](https://nodejs.org/) - It is best to install this first, since just about everything that follows depends on it.
+- [Meteor](http://meteor.com/) - This can be installed via the terminal with `curl https://install.meteor.com/ | sh`.
+- [Meteor Up](https://github.com/arunoda/meteor-up/) - This can be installed via the terminal with `npm install -g mup`.
+- [Bower](http://bower.io/) - Once Node is installed, you should only need to enter `npm install -g bower` in your terminal.
 
 ### Basic Commands
 - `meteor` - Serve the current app at http://localhost:3000 using Meteor's local development server.
 - `meteor mongo` - Opens a MongoDB shell for viewing and/or manipulating collections stored in the database. Note that you must already be running a server for the current app (in another terminal window) in order for meteor mongo to connect to the app's database.
 - `meteor add` - Add a package (or multiple packages) to your Meteor project. To query for available packages, use the `meteor search` command.
 - `meteor remove` - Remove a package previously added to your Meteor project. For a list of the packages that your application is currently using, use the `meteor list` command.
+- `meteor deploy rather.meteor.com` - Deploy app to Meteor's testing servers.
+- `meteor run android-device --mobile-server rather.meteor.com` - Deploy app to Android platform utilizing Meteor's testing servers.
 
 ### Install Android dependencies
 - `meteor install-sdk android`
 - `meteor add-platform android`
-
-### Testing Deployment
-You can test the app by deploying it to Meteor's testing servers by running the command `meteor deploy rather.meteor.com`.
-
-You can do a test build on an Android phone using Meteor's testing servers by running the command `meteor run android-device --mobile-server democio.meteor.com`.
-
-### Depdendencies
-- `meteor-platform`
-- `accounts-ui`
-- `accounts-password`
-- `accounts-twitter`
-- `fourseven:scss`
 
 ### Standards
 
