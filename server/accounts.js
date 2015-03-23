@@ -47,5 +47,22 @@ Accounts.onCreateUser(function(options, user, profile) {
 		}
 	}
 
+	// Build some basic user settings
+	user.settings = {
+		status: 1
+	}
+
 	return user;
+});
+
+/**
+ * Quick check to make sure user is not deactivated
+ *
+ * @method Accounts.validateLoginAttempt
+ * @param {Object} result Object that contains all the login information
+ * @return {Boolean} Whether or not the user's account is active
+ * @since v0.1.0
+ */
+Accounts.validateLoginAttempt(function(result) {
+	return result.user.settings.status > 0;
 });
