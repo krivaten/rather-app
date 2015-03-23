@@ -9,10 +9,18 @@ Template.componentToggleBlock.events({
 	 * @since v0.1.0
 	 */
 	'click .toggle-block__btn': function () {
-		var dataTrigger = $('[data-trigger="' + this.trigger + '"]');
+		var toggleBlock, toggleContainer, toggleContent, toggleHeight;
 
-		// Toggle the active class on this toggle block
-		dataTrigger.toggleClass('active');
+		toggleBlock = $('[data-trigger="' + this.trigger + '"]');
+		toggleContainer = toggleBlock.next('.toggle-block__container');
+		toggleContent = toggleContainer.find('.toggle-block__content');
+
+		toggleBlock.toggleClass('active');
+
+		if (toggleBlock.hasClass('active')) toggleHeight = toggleContent.height();
+		else toggleHeight = 0;
+
+		toggleContainer.height(toggleHeight);
 	}
 
 });

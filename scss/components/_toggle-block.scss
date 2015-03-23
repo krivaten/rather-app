@@ -1,0 +1,59 @@
+/**
+ * Toggle block styles
+ */
+.toggle-block {
+	position: relative;
+	display: table;
+	height: $base-height;
+	overflow: hidden;
+
+	.toggle-block__bar, .toggle-block__btn {
+		display: table-cell;
+	}
+
+	.toggle-block__bar {
+		position: relative;
+		width: 100%;
+		&:before {
+			position: absolute;
+			content: '';
+			width: 100%;
+			border-top: $base-border;
+			top: 50%;
+		}
+	}
+
+	&.active {
+		.toggle-block__btn {
+			i {
+				@include transform(rotate(180deg));
+			}
+		}
+	}
+
+
+	.toggle-block__btn {
+		font-size: 1em;
+		padding-top: $spacing-xs;
+		padding-bottom: $spacing-xs;
+		padding-right: ($spacing-sm * 2);
+		color: $tertiary-color;
+
+		i {
+			@include transition(all 0.2s ease-in-out);
+			position: absolute;
+			right: 0;
+			top: 0;
+			font-size: 1.5em;
+			height: $base-height;
+			line-height: $base-height;
+			width: $base-height;
+		}
+	}
+
+	+ .toggle-block__container {
+		@include transition(height $duration-slide $timing-function);
+		height: 0;
+		overflow: hidden;
+	}
+}
