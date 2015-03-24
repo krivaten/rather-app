@@ -1,5 +1,5 @@
 /**
- * Index helpers
+ * Index rendered
  */
 Template.index.rendered = function() {
 
@@ -8,6 +8,10 @@ Template.index.rendered = function() {
 
 };
 
+
+/**
+ * Index helpers
+ */
 Template.index.helpers({
 
 	/**
@@ -97,6 +101,7 @@ Template.index.helpers({
 	}
 
 });
+
 
 /**
  * Index Events

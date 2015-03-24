@@ -1,7 +1,6 @@
 /**
- * Reset password
+ * Reset password helpers
  */
-
 Template.accountResetPassword.helpers({
 
 	/**
@@ -17,6 +16,10 @@ Template.accountResetPassword.helpers({
 
 });
 
+
+/**
+ * Reset password events
+ */
 Template.accountResetPassword.events({
 
 	/**

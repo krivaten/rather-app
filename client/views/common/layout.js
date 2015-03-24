@@ -1,35 +1,6 @@
-Template.layout.events({
-
-	/**
-	 * Hide the menu on click
-	 *
-	 * @since v0.1.0
-	 */
-	"click .menu--visible": function(event) {
-		Session.set('menuVisible', false);
-	},
-
-
-	/**
-	 * Set inputFocus session variable as true on input:focus
-	 *
-	 * @since v0.1.0
-	 */
-	'focus input': function() {
-		Session.set('inputFocus', true);
-	},
-
-
-	/**
-	 * Set inputFocus session variable as false on input:blur
-	 *
-	 * @since v0.1.0
-	 */
-	'blur input': function() {
-		Session.set('inputFocus', false);
-	}
-});
-
+/**
+ * Layout helpers
+ */
 Template.layout.helpers({
 
 	/**
@@ -67,4 +38,40 @@ Template.layout.helpers({
 		return Session.get('drawerVisible');
 	}
 
+});
+
+
+/**
+ * Layout events
+ */
+Template.layout.events({
+
+	/**
+	 * Hide the menu on click
+	 *
+	 * @since v0.1.0
+	 */
+	"click .menu--visible": function(event) {
+		Session.set('menuVisible', false);
+	},
+
+
+	/**
+	 * Set inputFocus session variable as true on input:focus
+	 *
+	 * @since v0.1.0
+	 */
+	'focus input': function() {
+		Session.set('inputFocus', true);
+	},
+
+
+	/**
+	 * Set inputFocus session variable as false on input:blur
+	 *
+	 * @since v0.1.0
+	 */
+	'blur input': function() {
+		Session.set('inputFocus', false);
+	}
 });

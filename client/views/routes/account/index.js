@@ -1,7 +1,11 @@
 /**
- * Account Index
+ * Sign out a user
+ *
+ * @method userSignOut
+ * @param {Boolean} showAlert Whether or not to show confirmation alert
+ * @return {undefined}
+ * @since v0.1.0
  */
-
 var userSignOut = function(showAlert) {
 	Meteor.logout(function(error) {
 		if (error) return messages.errors.general(error);
@@ -13,6 +17,10 @@ var userSignOut = function(showAlert) {
 	});
 }
 
+
+/**
+ * Account Index helpers
+ */
 Template.accountIndex.helpers({
 
 	/**
@@ -65,6 +73,9 @@ Template.accountIndex.helpers({
 });
 
 
+/**
+ * Account Index events
+ */
 Template.accountIndex.events({
 
 

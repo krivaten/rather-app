@@ -1,5 +1,5 @@
 /**
- * Account change password
+ * Account change password events
  */
 Template.accountChangePassword.events({
 

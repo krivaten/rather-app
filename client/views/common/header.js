@@ -1,3 +1,25 @@
+/**
+ * Layout helpers
+ */
+Template.header.helpers({
+
+	/**
+	 * Determine if menu is visible
+	 *
+	 * @method menuVisible
+	 * @return {Boolean} Whether or not menu is visible
+	 * @since v0.1.0
+	 */
+	menuVisible: function() {
+		return Session.get('menuVisible');
+	}
+
+});
+
+
+/**
+ * Header events
+ */
 Template.header.events({
 	"click .header__nav-right a": function(event) {
 		// Close right menu
@@ -19,19 +41,4 @@ Template.header.events({
 		Session.set('drawerVisible', false);
 		Session.set('menuVisible', true);
 	}
-});
-
-Template.header.helpers({
-
-	/**
-	 * Determine if menu is visible
-	 *
-	 * @method menuVisible
-	 * @return {Boolean} Whether or not menu is visible
-	 * @since v0.1.0
-	 */
-	menuVisible: function() {
-		return Session.get('menuVisible');
-	}
-
 });
