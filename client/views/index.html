@@ -36,6 +36,7 @@
 	<meta name="theme-color" content="#f9f9f9">
 
 	<!-- Components -->
+	<script src="/components/fastclick/lib/fastclick.js"></script>
 	<script src="/components/lodash/lodash.min.js"></script>
 	<script src="/components/moment/min/moment.min.js"></script>
 	<script src="/components/toastr/toastr.js"></script>
@@ -44,6 +45,13 @@
 	<script src="/js/helpers/lodash-helpers.js"></script>
 	<script src="/js/helpers/toastr-helpers.js"></script>
 
+	<script>
+		if ('addEventListener' in document) {
+			document.addEventListener('DOMContentLoaded', function() {
+				FastClick.attach(document.body);
+			}, false);
+		}
+	</script>
 </head>
 
 <body>
