@@ -21,24 +21,46 @@ Template.header.helpers({
  * Header events
  */
 Template.header.events({
-	"click .header__nav-right a": function(event) {
-		// Close right menu
-		Session.set('menuVisible', false);
 
-		return true;
-	},
-
-	"click .header--btn-back": function(event) {
+	/**
+	 * Go back
+	 *
+	 * @since v0.1.0
+	 */
+	"click [data-trigger='back']": function(event) {
 		window.history.back();
 	},
 
-	"click .header--btn-drawer": function(event) {
+
+	/**
+	 * Show the drawer
+	 *
+	 * @since v0.1.0
+	 */
+	"click [data-trigger='drawer']": function(event) {
 		Session.set('menuVisible', false);
 		Session.set('drawerVisible', true);
 	},
 
-	"click .header--btn-menu": function(event) {
+
+	/**
+	 * Show the menu
+	 *
+	 * @since v0.1.0
+	 */
+	"click [data-trigger='menu']": function(event) {
 		Session.set('drawerVisible', false);
 		Session.set('menuVisible', true);
+	},
+
+
+	/**
+	 * Open add poll
+	 *
+	 * @since v0.1.0
+	 */
+	"click [data-trigger='add']": function(event) {
+		Session.set('addVisible', true);
 	}
+
 });
