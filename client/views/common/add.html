@@ -1,0 +1,35 @@
+<template name="add">
+	<div class="add{{#if addVisible}} add--visible{{/if}}">
+		<header class="header">
+
+			<a href="#" class="header__link" data-trigger="close">
+				<i class="ion ion-chevron-left"></i>
+			</a>
+
+			<h3 class="header__title">
+				New Poll
+			</h3>
+
+			<div class="header__nav">
+				<a href="#" class="header__link" data-trigger="post">
+					Post
+				</a>
+			</div>
+		</header>
+
+		<div class="add__main">
+			<form class="form form--edit-profile" novalidate>
+				<div class="form__group">
+					<input type="text" name="title" class="form__group__input" placeholder="Title"/>
+					<div class="form__group__addon {{titleLengthColor}}">{{titleLength}}</div>
+				</div>
+				<div class="form__group form__group--textarea">
+					<textarea name="description" class="form__group__textarea" placeholder="Description" rows="4"></textarea>
+				</div>
+				<div class="form__group">
+					<input type="email" name="email" class="form__group__input" placeholder="Email" value="{{email}}"/>
+				</div>
+			</form>
+		</div>
+	</div>
+</template>
