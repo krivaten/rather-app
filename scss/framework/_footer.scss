@@ -13,7 +13,7 @@
 		line-height: $base-height;
 	}
 
-	.footer-col {
+	.footer--col {
 		@include span-columns(6);
 
 		&:first-of-type {

@@ -12,7 +12,7 @@ Template.componentTask.events({
 	 *
 	 * @since v0.1.0
 	 */
-	"click .task-complete": function () {
+	'click .task-complete': function () {
 		// Set the checked property to the opposite of its current value
 		Meteor.call("setChecked", this._id, !this.checked);
 	},
@@ -23,7 +23,7 @@ Template.componentTask.events({
 	 *
 	 * @since v0.1.0
 	 */
-	"click .task-delete": function () {
+	'click .task-delete': function () {
 		Meteor.call("deleteTask", this._id);
 	},
 
@@ -33,7 +33,7 @@ Template.componentTask.events({
 	 *
 	 * @since v0.1.0
 	 */
-	"click .task-private": function () {
+	'click .task-private': function () {
 		Meteor.call("setPrivate", this._id, !this.private);
 	}
 });

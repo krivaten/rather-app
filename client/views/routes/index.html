@@ -51,7 +51,7 @@
 		<footer class="footer footer--text">
 			<div class="padding--x">
 				<div class="row">
-					<div class="footer-col">
+					<div class="footer--col">
 						<a href="#" data-trigger="sign-up">
 							{{#if signUp}}
 								Nevermind, Sign In
@@ -62,11 +62,11 @@
 					</div>
 					<div class="footer-col">
 						{{#if signUp}}
-							<a href="{{pathFor 'infoTermsOfService'}}" class="text-tertiary">
+							<a href="{{pathFor 'infoTermsOfService'}}" class="text--tertiary">
 								Terms of Service
 							</a>
 						{{else}}
-							<a href="#" class="text-secondary" data-trigger="forgot-password">
+							<a href="#" class="text--secondary" data-trigger="forgot-password">
 								{{#if forgotPassword}}
 									Nevermind, Sign In
 								{{else}}

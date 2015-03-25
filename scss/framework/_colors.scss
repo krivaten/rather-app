@@ -1,13 +1,13 @@
 /**
  * Svg fills
  */
-.fill-primary {
+.fill--primary {
 	fill: $primary-color;
 }
-.fill-secondary {
+.fill--secondary {
 	fill: $secondary-color;
 }
-.fill-tertiary {
+.fill--tertiarytertiary {
 	fill: $tertiary-color;
 }
 
@@ -15,15 +15,15 @@
 /**
  * Text colors
  */
-.text-primary {
+.text--primary {
 	color: $primary-color;
-	
+
 	&:active {
 		color: darken($primary-color, 20%)
 	}
 }
 
-.text-secondary {
+.text--secondary {
 	color: $secondary-color;
 
 	&:active {
@@ -31,7 +31,7 @@
 	}
 }
 
-.text-tertiary {
+.text--tertiary {
 	color: $tertiary-color;
 
 	&:active {
@@ -42,6 +42,6 @@
 /**
  * Background colors
  */
-.bg-gray {
+.bg--gray {
 	background-color: $gray;
 }

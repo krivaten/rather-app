@@ -26,8 +26,8 @@ Template.header.events({
 	 * Go back
 	 *
 	 * @since v0.1.0
-	 */
-	"click [data-trigger='back']": function(event) {
+	*/
+	'click [data-trigger="back"]': function(event, template) {
 		window.history.back();
 	},
 
@@ -37,7 +37,7 @@ Template.header.events({
 	 *
 	 * @since v0.1.0
 	 */
-	"click [data-trigger='drawer']": function(event) {
+	'click [data-trigger="drawer"]': function(event, template) {
 		Session.set('menuVisible', false);
 		Session.set('drawerVisible', true);
 	},
@@ -48,7 +48,7 @@ Template.header.events({
 	 *
 	 * @since v0.1.0
 	 */
-	"click [data-trigger='menu']": function(event) {
+	'click [data-trigger="menu"]': function(event, template) {
 		Session.set('drawerVisible', false);
 		Session.set('menuVisible', true);
 	},
@@ -59,7 +59,7 @@ Template.header.events({
 	 *
 	 * @since v0.1.0
 	 */
-	"click [data-trigger='add']": function(event) {
+	'click [data-trigger="add"]': function(event, template) {
 		Session.set('addVisible', true);
 	}
 
