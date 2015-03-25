@@ -2,6 +2,7 @@
  * Drawer helpers
  */
 Template.drawer.helpers({
+
 	/**
 	 * Determine if drawer is visible
 	 *
