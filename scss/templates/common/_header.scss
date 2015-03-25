@@ -42,9 +42,14 @@
 		margin: 0;
 		display: inline-block;
 		font-size: 1.75em;
+
+		&:first-child {
+			padding-left: $spacing-sm;
+		}
 	}
 
-	.header__icon {
+	.header__link {
+		text-transform: lowercase;
 		font-size: 1.5em;
 		display: block;
 		float: left;

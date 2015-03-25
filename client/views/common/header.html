@@ -2,11 +2,11 @@
 	<header class="header {{#if nav}}nav{{/if}}">
 
 		{{#if btnBack}}
-			<a href="#" class="header__icon header--btn-back">
+			<a href="#" class="header__link" data-trigger="back">
 				<i class="ion ion-chevron-left"></i>
 			</a>
 		{{else}}
-			<a href="#" class="header__icon header--btn-drawer">
+			<a href="#" class="header__link" data-trigger="drawer">
 				<i class="ion ion-android-menu"></i>
 			</a>
 		{{/if}}
@@ -20,12 +20,16 @@
 				{{> svgLogoSm}}
 			</a>
 		{{/if}}
+
 		{{#if currentUser}}
 			<div class="header__nav">
-				<a href="#" class="header__icon header--search">
+				<a href="#" class="header__link" data-trigger="add">
+					<i class="ion ion-android-add"></i>
+				</a>
+				<a href="#" class="header__link" data-trigger="search">
 					<i class="ion ion-search"></i>
 				</a>
-				<a href="#" class="header__icon header--btn-menu">
+				<a href="#" class="header__link" data-trigger="menu">
 					<i class="ion ion-android-more-vertical"></i>
 				</a>
 			</div>
