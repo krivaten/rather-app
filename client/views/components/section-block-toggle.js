@@ -1,19 +1,19 @@
 /**
- * Toggle block component
+ * Section block toggle component
  */
-Template.componentToggleBlock.events({
+Template.componentSectionBlockToggle.events({
 
 	/**
 	 * Trigger toggle
 	 *
 	 * @since v0.1.0
 	 */
-	'click .toggle-block__btn': function () {
+	'click .section-block__btn': function () {
 		var toggleBlock, toggleContainer, toggleContent, toggleHeight;
 
 		toggleBlock = $('[data-trigger="' + this.trigger + '"]');
-		toggleContainer = toggleBlock.next('.toggle-block__container');
-		toggleContent = toggleContainer.find('.toggle-block__content');
+		toggleContainer = toggleBlock.next('.section-block-toggle__container');
+		toggleContent = toggleContainer.find('.section-block-toggle__content');
 
 		toggleBlock.toggleClass('active');
 

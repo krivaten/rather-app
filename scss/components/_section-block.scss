@@ -1,43 +1,53 @@
 /**
- * Toggle block styles
+ * Section block styles
  */
-.toggle-block {
+.section-block {
 	position: relative;
-	display: table;
+	@include display(flex);
+	@include align-items(center);
 	height: $base-height;
 	overflow: hidden;
 
-	.toggle-block__bar, .toggle-block__btn {
-		display: table-cell;
-	}
-
-	.toggle-block__bar {
+	.section-block__bar {
 		position: relative;
 		width: 100%;
 		&:before {
 			position: absolute;
 			content: '';
 			width: 100%;
-			border-top: $base-border;
+			border-bottom: $base-border;
 			top: 50%;
 		}
 	}
 
 	&.active {
-		.toggle-block__btn {
+		.section-block__btn {
 			i {
 				@include transform(rotate(180deg));
 			}
 		}
 	}
 
+	.section-block__btn,
+	.section-block__text {
+		@include flex(0 0 auto);
+		width: auto;
+		white-space: nowrap;
+		text-transform: lowercase;
 
-	.toggle-block__btn {
+		span {
+			padding-right: $spacing-sm;
+			padding-left: $spacing-sm;
+		}
+	}
+	.section-block__btn {
 		font-size: 1em;
-		padding-top: $spacing-xs;
-		padding-bottom: $spacing-xs;
-		padding-right: ($spacing-sm * 2);
 		color: $tertiary-color;
+		padding: $spacing-xs 0;
+
+		span {
+			padding-right: ($spacing-md * 1.25);
+		}
 
 		i {
 			@include transition(all 0.2s ease-in-out);
@@ -51,7 +61,7 @@
 		}
 	}
 
-	+ .toggle-block__container {
+	+ .section-block-toggle__container {
 		@include transition(height $duration-slide $timing-function);
 		height: 0;
 		overflow: hidden;
