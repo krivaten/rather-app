@@ -3,8 +3,8 @@
  */
 .add {
 	@include transition-property(transform);
-	@include transition-duration($duration-slide);
-	@include transition-timing-function($timing-function);
+	@include transition-duration(0.25s);
+	@include transition-timing-function(ease-in-out);
 	@include transform(translate3d(0, 0, 0));
 	position: fixed;
 	top: 100%;

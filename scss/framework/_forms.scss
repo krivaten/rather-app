@@ -3,12 +3,14 @@
  */
 .form__group {
 	position: relative;
-	display: table;
 	border-top: $base-border;
 	padding-left: $spacing-sm;
 	padding-right: $spacing-sm;
+	min-height: $base-input-height;
 	text-transform: lowercase;
 	width: 100%;
+	@include display(flex);
+	@include align-items(center);
 
 	&:first-of-type {
 		border-top: 0;
@@ -25,7 +27,8 @@
 	}
 
 	.form__group__addon {
-		display: table-cell;
+		white-space: nowrap;
+		width: auto;
 		text-align: center;
 
 		&:first-child {
@@ -36,8 +39,7 @@
 		}
 	}
 
-	.form__group__input {
-		display: table-cell;
+	.form__group__input, .form__group__text {
 		width: 100%;
 	}
 
@@ -46,6 +48,15 @@
 		padding-bottom: $spacing-xs;
 	}
 
+	.form__group__select {
+		height: $base-input-height;
+		line-height: $base-input-height;
+		width: 100%;
+		font-size: $base-font-size;
+		text-transform: lowercase;
+		padding: 0;
+		background: transparent;
+	}
 	&.form__group--collapsible {
 		@include transition(height 0.2s ease-in-out, opacity 0.2s ease-in-out);
 		@include transform(translateZ(0));
@@ -56,6 +67,50 @@
 		&[data-disabled="true"] {
 			height: 0;
 			opacity: 0;
+		}
+	}
+
+	.form__group__toggle {
+		width: auto;
+
+		input[type="checkbox"] {
+			display: none;
+
+			+ label {
+				background: $gray;
+				border-radius: 2em;
+				padding: 2px;
+				transition: all .4s ease;
+				outline: 0;
+				display: block;
+				width: 4em;
+				height: 2em;
+				position: relative;
+				cursor: pointer;
+				user-select: none;
+
+				&:after {
+					@include transition(all 0.2s ease-in-out);
+					border-radius: 50%;
+					background: $white;
+					left: 0;
+					position: relative;
+					display: block;
+					content: '';
+					width: 50%;
+					height: 100%;
+				}
+			}
+
+			&:checked {
+				+ label {
+					background: $primary-color;
+
+					&:after {
+						left: 50%;
+					}
+				}
+			}
 		}
 	}
 }
