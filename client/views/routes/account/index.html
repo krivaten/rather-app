@@ -24,10 +24,10 @@
 			</div>
 		</form>
 
-		{{> componentToggleBlock trigger="account-index-details" name="advanced options"}}
+		{{> componentSectionBlockToggle trigger="account-index-details" name="advanced options"}}
 
-		<div class="toggle-block__container">
-			<div class="toggle-block__content">
+		<div class="section-block-toggle__container">
+			<div class="section-block-toggle__content">
 				<p class="text-center padding">
 					<a href="{{pathFor 'accountChangePassword'}}" class="btn btn-primary btn-block"  data-trigger="change-password">Change Password</a>
 					<a href="#" class="btn btn-gray btn-block" data-trigger="sign-out">Sign Out</a>
