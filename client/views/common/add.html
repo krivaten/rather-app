@@ -23,12 +23,46 @@
 					<input type="text" name="title" class="form__group__input" placeholder="Title"/>
 					<div class="form__group__addon {{titleLengthColor}}">{{titleLength}}</div>
 				</div>
-				<div class="form__group form__group--textarea">
+				<div class="form__group">
 					<textarea name="description" class="form__group__textarea" placeholder="Description" rows="4"></textarea>
 				</div>
-				<div class="form__group">
-					<input type="email" name="email" class="form__group__input" placeholder="Email" value="{{email}}"/>
+
+				{{> componentsFormToggleBtn id="postImmediately" checked="true" title="Post Immediately"}}
+
+				<div class="form__group form__group--select">
+					<select name="pollDuration" class="form__group__select">
+						<option>Poll Duration</option>
+						<option value="15">15 Minutes</option>
+						<option value="30">30 Minutes</option>
+						<option value="60">One Hour</option>
+						<option value="180">Three Hours</option>
+						<option value="360">Six Hours</option>
+						<option value="720">Twelve Hours</option>
+						<option value="1440">One Day</option>
+						<option value="10080">One Week</option>
+						<option value="43200">One Month</option>
+					</select>
 				</div>
+
+				{{> componentSectionBlockToggle trigger="poll-advanced-options" name="Advanced"}}
+
+				<div class="section-block-toggle__container">
+					<div class="section-block-toggle__content">
+						{{> componentsFormToggleBtn id="displayLocation" title="Publish your location?"}}
+						{{> componentsFormToggleBtn id="private" title="Is this poll private?"}}
+						{{> componentsFormToggleBtn id="commentsEnabled" checked="true" title="Allow comments?"}}
+						{{> componentsFormToggleBtn id="loggedOutVote" checked="true" title="Can logged out users vote?"}}
+						{{> componentsFormToggleBtn id="loggedOutView" title="Can logged out users view this poll?"}}
+					</div>
+				</div>
+
+				{{> componentSectionBlock name="Poll Options"}}
+
+				{{#each pollOptions}}
+
+				{{else}}
+					<h3>No po opgins!</h3>
+				{{/each}}
 			</form>
 		</div>
 	</div>
